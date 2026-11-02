@@ -1,0 +1,66 @@
+city,role,group,low_lpa,mid_lpa,high_lpa,salaries_3_6,salaries_6_9,counts_for_range,method
+Gurugram,AI Engineer,AI ceiling,18.73,20.87,23.0,81,0,,interpolated 3-6 to 6-9 (6-9 is an AmbitionBox estimate); not counted: 6-9 band has fewer than 5 reported salaries
+Gurugram,BI Engineer,BI + AI/Fabric,19.02,20.02,21.01,7,0,,interpolated 3-6 to 6-9 (6-9 is an AmbitionBox estimate); not counted: 6-9 band has fewer than 5 reported salaries
+Gurugram,Senior BI Developer,BI + AI/Fabric,11.11,13.1,15.08,19,41,yes,interpolated 3-6 to 6-9
+Gurugram,Power BI Consultant,BI + AI/Fabric,9.57,11.61,13.66,21,6,yes,interpolated 3-6 to 6-9
+Gurugram,Analytics Engineer,BI + AI/Fabric,10.82,11.4,11.97,18,4,,interpolated 3-6 to 6-9; not counted: 6-9 band has fewer than 5 reported salaries
+Gurugram,Senior Power BI Developer,BI + AI/Fabric,9.34,11.32,13.29,31,39,yes,interpolated 3-6 to 6-9
+Gurugram,Power Platform Developer,BI + AI/Fabric,5.4,6.65,7.9,11,0,,3-6 band only (no 6-9 data)
+Gurugram,BI Developer,Core BI,7.58,8.71,9.84,83,14,,interpolated 3-6 to 6-9
+Gurugram,Power BI Developer,Core BI,7.66,8.58,9.5,283,3,,interpolated 3-6 to 6-9; not counted: 6-9 band has fewer than 5 reported salaries
+Gurugram,Azure Data Engineer,Excluded,9.2,10.67,12.14,125,12,,interpolated 3-6 to 6-9
+New Delhi,AI Engineer,AI ceiling,11.1,13.3,15.5,59,0,,3-6 band only (no 6-9 data)
+New Delhi,Senior BI Developer,BI + AI/Fabric,11.04,13.42,15.79,8,19,,interpolated 3-6 to 6-9
+New Delhi,Power BI Consultant,BI + AI/Fabric,9.97,11.87,13.77,19,5,yes,interpolated 3-6 to 6-9
+New Delhi,Analytics Engineer,BI + AI/Fabric,9.34,11.56,13.77,7,6,,interpolated 3-6 to 6-9
+New Delhi,Senior Power BI Developer,BI + AI/Fabric,9.42,11.14,12.85,29,19,yes,interpolated 3-6 to 6-9
+New Delhi,BI Engineer,BI + AI/Fabric,8.4,10.25,12.1,7,0,,3-6 band only (no 6-9 data)
+New Delhi,Power Platform Developer,BI + AI/Fabric,8.02,8.99,9.96,20,0,,interpolated 3-6 to 6-9 (6-9 is an AmbitionBox estimate); not counted: 6-9 band has fewer than 5 reported salaries
+New Delhi,Power BI Developer,Core BI,7.56,8.4,9.24,247,0,,interpolated 3-6 to 6-9 (6-9 is an AmbitionBox estimate); not counted: 6-9 band has fewer than 5 reported salaries
+New Delhi,BI Developer,Core BI,6.79,7.94,9.09,87,3,,interpolated 3-6 to 6-9; not counted: 6-9 band has fewer than 5 reported salaries
+New Delhi,Azure Data Engineer,Excluded,7.94,8.71,9.48,108,0,,interpolated 3-6 to 6-9 (6-9 is an AmbitionBox estimate); not counted: 6-9 band has fewer than 5 reported salaries
+Noida,AI Engineer,AI ceiling,11.2,13.3,15.4,78,0,,3-6 band only (no 6-9 data)
+Noida,Senior BI Developer,BI + AI/Fabric,10.43,12.4,14.36,13,18,yes,interpolated 3-6 to 6-9
+Noida,BI Engineer,BI + AI/Fabric,9.8,11.95,14.1,5,0,,3-6 band only (no 6-9 data)
+Noida,Senior Power BI Developer,BI + AI/Fabric,9.1,10.68,12.26,23,36,yes,interpolated 3-6 to 6-9
+Noida,Power BI Consultant,BI + AI/Fabric,8.53,10.11,11.7,11,8,yes,interpolated 3-6 to 6-9
+Noida,Power Platform Developer,BI + AI/Fabric,5.9,6.95,8.0,17,0,,3-6 band only (no 6-9 data)
+Noida,BI Developer,Core BI,6.71,7.73,8.75,76,7,,interpolated 3-6 to 6-9
+Noida,Power BI Developer,Core BI,6.74,7.42,8.09,332,4,,interpolated 3-6 to 6-9; not counted: 6-9 band has fewer than 5 reported salaries
+Noida,Azure Data Engineer,Excluded,8.13,9.4,10.68,188,8,,interpolated 3-6 to 6-9
+Bengaluru,AI Engineer,AI ceiling,17.73,19.98,22.24,650,10,,interpolated 3-6 to 6-9
+Bengaluru,BI Engineer,BI + AI/Fabric,13.66,15.27,16.88,56,33,yes,interpolated 3-6 to 6-9
+Bengaluru,Analytics Engineer,BI + AI/Fabric,11.22,13.1,14.98,102,74,yes,interpolated 3-6 to 6-9
+Bengaluru,Senior BI Developer,BI + AI/Fabric,11.55,12.61,13.68,90,118,yes,interpolated 3-6 to 6-9
+Bengaluru,Senior Power BI Developer,BI + AI/Fabric,11.34,11.94,12.54,138,225,yes,interpolated 3-6 to 6-9
+Bengaluru,Power Platform Developer,BI + AI/Fabric,8.96,10.13,11.31,224,14,yes,interpolated 3-6 to 6-9
+Bengaluru,Power BI Consultant,BI + AI/Fabric,9.21,9.82,10.44,235,79,yes,interpolated 3-6 to 6-9
+Bengaluru,BI Developer,Core BI,8.14,8.7,9.27,1300,103,,interpolated 3-6 to 6-9
+Bengaluru,Power BI Developer,Core BI,7.67,8.11,8.55,9600,156,,interpolated 3-6 to 6-9
+Bengaluru,Azure Data Engineer,Excluded,9.47,10.01,10.55,4500,201,,interpolated 3-6 to 6-9
+Hyderabad,AI Engineer,AI ceiling,16.35,17.31,18.27,336,0,,interpolated 3-6 to 6-9 (6-9 is an AmbitionBox estimate); not counted: 6-9 band has fewer than 5 reported salaries
+Hyderabad,Analytics Engineer,BI + AI/Fabric,13.58,14.3,15.02,39,7,yes,interpolated 3-6 to 6-9
+Hyderabad,BI Engineer,BI + AI/Fabric,10.92,12.91,14.89,48,9,yes,interpolated 3-6 to 6-9
+Hyderabad,Senior BI Developer,BI + AI/Fabric,11.03,12.06,13.09,66,83,yes,interpolated 3-6 to 6-9
+Hyderabad,Power BI Consultant,BI + AI/Fabric,9.06,9.8,10.54,164,72,yes,interpolated 3-6 to 6-9
+Hyderabad,BI Developer,Core BI,7.56,8.16,8.76,1100,67,,interpolated 3-6 to 6-9
+Hyderabad,Power BI Developer,Core BI,7.61,8.02,8.42,8400,136,,interpolated 3-6 to 6-9
+Hyderabad,Azure Data Engineer,Excluded,9.48,9.95,10.43,4800,232,,interpolated 3-6 to 6-9
+Pune,AI Engineer,AI ceiling,16.13,18.13,20.12,305,8,,interpolated 3-6 to 6-9
+Pune,Senior BI Developer,BI + AI/Fabric,12.27,13.84,15.4,39,60,yes,interpolated 3-6 to 6-9
+Pune,Analytics Engineer,BI + AI/Fabric,10.66,13.1,15.55,40,18,yes,interpolated 3-6 to 6-9
+Pune,BI Engineer,BI + AI/Fabric,10.57,12.76,14.95,19,3,,interpolated 3-6 to 6-9; not counted: 6-9 band has fewer than 5 reported salaries
+Pune,Senior Power BI Developer,BI + AI/Fabric,10.57,11.91,13.26,92,72,yes,interpolated 3-6 to 6-9
+Pune,Power Platform Developer,BI + AI/Fabric,8.82,10.37,11.92,99,6,yes,interpolated 3-6 to 6-9
+Pune,Power BI Consultant,BI + AI/Fabric,8.95,10.04,11.13,93,18,yes,interpolated 3-6 to 6-9
+Pune,BI Developer,Core BI,7.88,8.61,9.34,381,40,,interpolated 3-6 to 6-9
+Pune,Power BI Developer,Core BI,7.18,7.83,8.49,3100,37,,interpolated 3-6 to 6-9
+Pune,Azure Data Engineer,Excluded,8.95,9.83,10.72,1600,86,,interpolated 3-6 to 6-9
+Mumbai,AI Engineer,AI ceiling,19.79,21.43,23.08,93,0,,interpolated 3-6 to 6-9 (6-9 is an AmbitionBox estimate); not counted: 6-9 band has fewer than 5 reported salaries
+Mumbai,Senior BI Developer,BI + AI/Fabric,9.74,11.55,13.35,21,20,yes,interpolated 3-6 to 6-9
+Mumbai,Senior Power BI Developer,BI + AI/Fabric,8.23,10.07,11.9,19,22,yes,interpolated 3-6 to 6-9
+Mumbai,Power BI Consultant,BI + AI/Fabric,7.62,9.04,10.45,22,5,yes,interpolated 3-6 to 6-9
+Mumbai,Power Platform Developer,BI + AI/Fabric,5.8,7.05,8.3,26,0,,3-6 band only (no 6-9 data)
+Mumbai,BI Developer,Core BI,9.25,9.89,10.53,151,55,,interpolated 3-6 to 6-9
+Mumbai,Power BI Developer,Core BI,6.83,7.58,8.33,654,5,,interpolated 3-6 to 6-9
+Mumbai,Azure Data Engineer,Excluded,7.81,9.4,10.99,186,10,,interpolated 3-6 to 6-9

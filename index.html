@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI-enabled BI Developer Pay</title>
+<meta name="description" content="Market benchmark for an AI-enabled Power BI developer with 5 years 7 months of experience in India's prime cities, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --font-anthropic-sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-anthropic-serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --color-bg:#f6f5f2;--color-panel:#ffffff;--color-fg:#1d2230;--color-fg-muted:#5f6675;--color-border-line:#e3e1dc;
+  --color-ok:#1f8a4c;--color-warn:#b8730a;--color-bad:#c2362f;
+  --cds-surface-popover:#ffffff;--cds-border:#dcdad4;--cds-shadow-popover:0 10px 30px -12px rgba(20,24,40,.35);--cds-text-secondary:#5f6675;
+  --cds-chart-grid:#ecebe7;--cds-chart-axis:#c9c7c1;--cds-chart-reference:#8b919e;--cds-chart-muted:#b9bdc6;
+  --cds-gap-xs:4px;--cds-gap-sm:8px;--cds-gap-md:14px;--cds-gap-lg:20px;--cds-gap-xl:28px;
+  --cds-pad-xs:4px;--cds-pad-sm:8px;--cds-pad-md:14px;--cds-pad-lg:20px;--cds-pad-xl:28px;
+  --cds-radius:10px;--cds-font-size-caption:12px;--cds-font-size-body:14px;--cds-font-size-heading:16px;--cds-font-size-title:26px;
+  --cds-font-weight-medium:600;--cds-dur-slow:.4s;--cds-ease-out:cubic-bezier(.2,.8,.2,1);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --color-bg:#12141a;--color-panel:#1b1e26;--color-fg:#eef0f5;--color-fg-muted:#a3a9b6;--color-border-line:#2c303b;
+  --color-ok:#4cc584;--color-warn:#e0a53c;--color-bad:#ef6b62;
+  --cds-surface-popover:#232733;--cds-border:#363b48;--cds-shadow-popover:0 10px 30px -12px rgba(0,0,0,.7);--cds-text-secondary:#a3a9b6;
+  --cds-chart-grid:#262a34;--cds-chart-axis:#3a3f4b;--cds-chart-reference:#9aa1ae;--cds-chart-muted:#4a505e;
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --color-bg:#12141a;--color-panel:#1b1e26;--color-fg:#eef0f5;--color-fg-muted:#a3a9b6;--color-border-line:#2c303b;
+  --color-ok:#4cc584;--color-warn:#e0a53c;--color-bad:#ef6b62;
+  --cds-surface-popover:#232733;--cds-border:#363b48;--cds-shadow-popover:0 10px 30px -12px rgba(0,0,0,.7);--cds-text-secondary:#a3a9b6;
+  --cds-chart-grid:#262a34;--cds-chart-axis:#3a3f4b;--cds-chart-reference:#9aa1ae;--cds-chart-muted:#4a505e;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans);font-size:var(--cds-font-size-body);line-height:1.5}
+#dash-root{max-width:1240px;margin-inline:auto;padding-block:max(20px,env(safe-area-inset-top,0px)) 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+#dash-root b,#dash-root strong{font-weight:700}
+#dash-root a{color:inherit}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+window.DASH_SOURCES = {
+  tsum: 'data/biai_target_summary.csv',
+  troles: 'data/biai_target_roles.csv',
+  tposts: 'data/biai_target_postings.csv',
+  market: 'data/biai_market.csv',
+  postings: 'data/biai_postings.csv'
+};
+</script>
+<script src="assets/dash.js"></script>
+</head>
+<body>
+<div id="dash-root">
+<meta name="dash-one-writer">
+<style>
+.bx{display:flex;flex-direction:column;gap:var(--cds-gap-xl);font-family:var(--font-anthropic-sans)}
+.bx-head h1{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);margin:0;text-wrap:balance}
+.bx-head p{margin:var(--cds-gap-xs) 0 0;color:var(--color-fg-muted);max-width:76ch}
+.bx .bx-head b,.bx .bx-note b{font-weight:600;color:var(--color-fg)}
+.bx-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);min-width:0;display:flex;flex-direction:column;gap:var(--cds-gap-md)}
+.bx-card h2,.bx-card h3{margin:0;font-weight:var(--cds-font-weight-medium);font-size:var(--cds-font-size-heading)}
+.bx-card h4{margin:0;font-weight:var(--cds-font-weight-medium);font-size:var(--cds-font-size-body)}
+.bx-hero{border-width:2px;border-color:color-mix(in srgb,var(--color-fg) 22%,var(--color-border-line))}
+.bx-eyebrow{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);letter-spacing:.04em;text-transform:uppercase}
+.bx-note{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:0;max-width:84ch}
+.bx-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,26rem),1fr));gap:var(--cds-gap-md)}
+.bx-chips{display:flex;flex-wrap:wrap;gap:var(--cds-gap-xs)}
+.bx-chip{font:inherit;font-size:var(--cds-font-size-caption);color:var(--color-fg);background:var(--color-bg);border:1px solid var(--color-border-line);border-radius:999px;padding:4px 12px;cursor:pointer}
+.bx-chip[aria-pressed=true]{background:var(--color-fg);color:var(--color-bg);border-color:var(--color-fg)}
+.bx-chip:focus-visible,.bx-sort:focus-visible{outline:2px solid var(--color-fg);outline-offset:2px}
+.bx-figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:var(--cds-gap-md)}
+.bx-fig{display:flex;flex-direction:column;gap:2px;padding:var(--cds-pad-md);border-radius:var(--cds-radius);background:var(--color-bg);border:1px solid var(--color-border-line)}
+.bx-fig .lbl{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.bx-fig .val{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);font-variant-numeric:tabular-nums;line-height:1.15}
+.bx-fig .val small{font-family:var(--font-anthropic-sans);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.bx-fig .sub{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.bx-fig.key{background:color-mix(in srgb,var(--bx-accent,#888) 12%,var(--color-bg))}
+.bx-chart{position:relative;min-height:220px}
+.bx-chart.tall{min-height:340px}
+.bx-tip{position:absolute;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:var(--cds-radius);box-shadow:var(--cds-shadow-popover);padding:var(--cds-pad-xs) var(--cds-pad-sm);font-size:var(--cds-font-size-caption);white-space:nowrap;z-index:3}
+.bx-tip .h{color:var(--cds-text-secondary)}
+.bx-tip i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px}
+.bx-legend{display:flex;flex-wrap:wrap;gap:var(--cds-gap-md);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.bx-legend span{display:inline-flex;align-items:center;gap:6px}
+.bx-sw{display:inline-block;width:12px;height:10px;border-radius:2px}
+.bx-sw.dot{width:10px;border-radius:50%}
+.bx-sw.thin{height:2px}
+.bx-sw.tick{width:2px;height:12px}
+.bx-scroll{overflow:auto}
+.bx-tall{max-height:26rem}
+table.bx-t{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:var(--cds-font-size-body)}
+.bx-t th,.bx-t td{padding:var(--cds-pad-xs) var(--cds-pad-sm);text-align:right;border-bottom:1px solid var(--color-border-line);white-space:nowrap}
+.bx-t th.l,.bx-t td.l{text-align:left}
+.bx-t th{font-weight:var(--cds-font-weight-medium);color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);position:sticky;top:0;background:var(--color-panel);z-index:1}
+.bx-t td.wrap{white-space:normal;min-width:12rem}
+.bx-t tr.dim td{color:var(--color-fg-muted)}
+.bx-t .hit{cursor:pointer}
+.bx-t .hit:hover{outline:2px solid var(--color-fg);outline-offset:-2px}
+.bx-low{font-style:italic;color:var(--color-fg-muted)}
+.bx-ctl{display:flex;flex-wrap:wrap;gap:var(--cds-gap-sm);align-items:center;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.bx-ctl select,.bx-ctl input{font:inherit;color:var(--color-fg);background:var(--color-bg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-xs) var(--cds-pad-sm)}
+.bx-sort{all:unset;cursor:pointer}
+.bx-split{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,30rem),1fr));gap:var(--cds-gap-lg)}
+.bx-split>div{min-width:0;display:flex;flex-direction:column;gap:var(--cds-gap-sm)}
+.bx-src{margin:0;padding-left:1.2em;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);display:flex;flex-direction:column;gap:4px;max-width:90ch}
+[data-dash-source-state=empty]{color:transparent}
+[data-dash-source-state=refreshing]{opacity:.5;transition:opacity var(--cds-dur-slow)}
+
+/* 3D layer: depth shadows, tilting cards, extruded figures */
+.bx{perspective:1800px}
+.bx-card{transform-style:preserve-3d;transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s;box-shadow:0 1px 0 color-mix(in srgb,var(--color-fg) 6%,transparent),0 22px 44px -28px color-mix(in srgb,var(--color-fg) 45%,transparent)}
+.bx-card:hover{box-shadow:0 1px 0 color-mix(in srgb,var(--color-fg) 8%,transparent),0 34px 60px -30px color-mix(in srgb,var(--color-fg) 55%,transparent)}
+.bx-hero{background:linear-gradient(155deg,color-mix(in srgb,var(--bx-accent,#888) 14%,var(--color-panel)) 0%,var(--color-panel) 55%)}
+.bx-fig{transform-style:preserve-3d;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;box-shadow:0 2px 0 color-mix(in srgb,var(--color-fg) 10%,transparent),0 14px 24px -18px color-mix(in srgb,var(--color-fg) 50%,transparent)}
+.bx-fig:hover{transform:translateZ(26px) translateY(-3px);box-shadow:0 3px 0 color-mix(in srgb,var(--color-fg) 12%,transparent),0 26px 34px -20px color-mix(in srgb,var(--color-fg) 55%,transparent)}
+.bx-fig.key .val{color:color-mix(in srgb,var(--bx-accent,#888) 70%,var(--color-fg))}
+.bx-fig.key{grid-column:1/-1;padding:var(--cds-pad-lg)}
+.bx-fig.key .val{font-size:calc(var(--cds-font-size-title) * 1.9)}
+.bx-headline{display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--cds-gap-sm) var(--cds-gap-lg);margin-top:var(--cds-gap-md)}
+.bx-hl-num{font-family:var(--font-anthropic-serif);font-size:calc(var(--cds-font-size-title) * 2.4);line-height:1;font-variant-numeric:tabular-nums;color:color-mix(in srgb,var(--bx-a1,#888) 75%,var(--color-fg))}
+.bx-hl-txt{flex:1 1 22rem;min-width:0;color:var(--color-fg-muted);max-width:60ch}
+.bx-eyebrow.review{display:inline-flex;align-self:flex-start;gap:6px;align-items:center;padding:3px 10px;border-radius:999px;border:1px solid var(--color-border-line);background:var(--color-panel)}
+
+.pd-scene{position:relative;height:290px;perspective:1100px;perspective-origin:50% 20%;overflow:hidden;border-radius:var(--cds-radius);background:radial-gradient(ellipse at 50% 100%,color-mix(in srgb,var(--bx-accent,#888) 18%,transparent) 0%,transparent 70%)}
+.pd-stage{position:absolute;left:50%;bottom:58px;display:flex;align-items:flex-end;gap:clamp(18px,5vw,54px);transform-style:preserve-3d;transform:translateX(-50%) rotateX(-16deg) rotateY(-24deg)}
+.pd-floor{position:absolute;left:50%;bottom:30px;width:min(560px,90%);height:120px;transform:translateX(-50%) rotateX(78deg);background:repeating-linear-gradient(90deg,color-mix(in srgb,var(--color-fg) 9%,transparent) 0 1px,transparent 1px 40px),repeating-linear-gradient(0deg,color-mix(in srgb,var(--color-fg) 9%,transparent) 0 1px,transparent 1px 40px);border-radius:8px}
+.pd-col{position:relative;display:flex;flex-direction:column;align-items:center;transform-style:preserve-3d}
+.pd-bar{position:relative;width:var(--w,56px);height:var(--h,10px);transform-style:preserve-3d;transform-origin:50% 100%}
+.pd-f{position:absolute;left:0;top:0;width:var(--w,56px);height:100%}
+.pd-front{transform:translateZ(calc(var(--w,56px) / 2));background:linear-gradient(180deg,color-mix(in srgb,var(--c) 85%,white),var(--c))}
+.pd-back{transform:rotateY(180deg) translateZ(calc(var(--w,56px) / 2));background:var(--c)}
+.pd-right{transform:rotateY(90deg) translateZ(calc(var(--w,56px) / 2));background:color-mix(in srgb,var(--c) 62%,black)}
+.pd-left{transform:rotateY(-90deg) translateZ(calc(var(--w,56px) / 2));background:color-mix(in srgb,var(--c) 75%,black)}
+.pd-top{height:var(--w,56px);transform:rotateX(90deg) translateZ(calc(var(--w,56px) / 2));background:color-mix(in srgb,var(--c) 55%,white)}
+.pd-val{position:absolute;left:50%;bottom:calc(var(--h,10px) + 20px);transform:translateX(-50%) translateZ(30px);font-family:var(--font-anthropic-serif);font-size:var(--cds-font-size-heading);white-space:nowrap;font-variant-numeric:tabular-nums}
+.pd-lbl{position:absolute;top:calc(100% + 34px);left:50%;transform:translateX(-50%);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);white-space:nowrap;text-align:center}
+
+.cs-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:var(--cds-gap-lg);align-items:start}
+.cs-in{display:flex;flex-direction:column;gap:var(--cds-gap-sm)}
+.cs-in input{font:inherit;font-family:var(--font-anthropic-serif);font-size:var(--cds-font-size-title);width:100%;max-width:14rem;color:var(--color-fg);background:var(--color-bg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-xs) var(--cds-pad-sm);box-shadow:inset 0 2px 6px color-mix(in srgb,var(--color-fg) 12%,transparent)}
+.cs-in label{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.cs-points{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:var(--cds-gap-sm);max-width:70ch}
+.cs-points b{font-weight:600}
+.cs-chart{position:relative;min-height:240px}
+
+@media (prefers-reduced-motion:no-preference){
+  .bx>*{animation:bx-rise .9s cubic-bezier(.2,.8,.2,1) backwards}
+  .bx>*:nth-child(2){animation-delay:.06s}
+  .bx>*:nth-child(3){animation-delay:.12s}
+  .bx>*:nth-child(4){animation-delay:.18s}
+  .bx>*:nth-child(5){animation-delay:.24s}
+  .bx>*:nth-child(n+6){animation-delay:.3s}
+  .bx-fig{animation:bx-flip .8s cubic-bezier(.2,.8,.2,1) backwards}
+  .bx-fig:nth-child(2){animation-delay:.08s}.bx-fig:nth-child(3){animation-delay:.16s}.bx-fig:nth-child(4){animation-delay:.24s}.bx-fig:nth-child(5){animation-delay:.32s}.bx-fig:nth-child(6){animation-delay:.4s}
+  .pd-stage{animation:pd-rock 14s ease-in-out infinite alternate}
+  .pd-bar.grow{animation:pd-grow 1.1s cubic-bezier(.2,.8,.2,1) both}
+  .pd-col:nth-child(2) .pd-bar.grow{animation-delay:.12s}.pd-col:nth-child(3) .pd-bar.grow{animation-delay:.24s}.pd-col:nth-child(4) .pd-bar.grow{animation-delay:.36s}
+  .bx-grow{transform-box:fill-box;transform-origin:0 50%;animation:bx-growx .9s cubic-bezier(.2,.8,.2,1) both}
+}
+/* Creative layer: aurora banner, flip-card city deck, 3D career staircase */
+.bx-banner{--bx-a1:var(--color-fg);--bx-a2:var(--color-fg-muted);--bx-a3:var(--color-fg);position:relative;overflow:hidden;isolation:isolate;border-radius:calc(var(--cds-radius) * 2);padding:var(--cds-pad-xl) var(--cds-pad-lg);border:1px solid var(--color-border-line);background:var(--color-panel);box-shadow:0 30px 60px -36px color-mix(in srgb,var(--color-fg) 55%,transparent)}
+.bx-aurora{position:absolute;inset:-40%;z-index:-1;pointer-events:none;filter:blur(28px);background:radial-gradient(38% 46% at 18% 28%,color-mix(in srgb,var(--bx-a1) 34%,transparent),transparent 70%),radial-gradient(34% 42% at 82% 18%,color-mix(in srgb,var(--bx-a2) 30%,transparent),transparent 70%),radial-gradient(44% 48% at 62% 92%,color-mix(in srgb,var(--bx-a3) 26%,transparent),transparent 70%)}
+.bx-grad{background:linear-gradient(90deg,var(--bx-a1),var(--bx-a2),var(--bx-a3),var(--bx-a1));background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+.bx-banner .bx-eyebrow.review{background:color-mix(in srgb,var(--color-panel) 70%,transparent);backdrop-filter:blur(6px)}
+
+.dk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,11.5rem),1fr));gap:var(--cds-gap-md);perspective:1200px}
+.dk-card{position:relative;height:184px;cursor:pointer;transform-style:preserve-3d;transition:transform .75s cubic-bezier(.2,.8,.2,1);border:0;background:none;padding:0;font:inherit;color:inherit;text-align:left}
+.dk-card:focus-visible{outline:2px solid var(--color-fg);outline-offset:3px;border-radius:var(--cds-radius)}
+.dk-card.flipped{transform:rotateY(180deg)}
+.dk-card:not(.flipped):hover{transform:translateZ(18px) rotateX(5deg)}
+.dk-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--cds-radius);padding:var(--cds-pad-md);display:flex;flex-direction:column;gap:6px;border:1px solid var(--color-border-line);box-shadow:0 2px 0 color-mix(in srgb,var(--color-fg) 10%,transparent),0 18px 30px -20px color-mix(in srgb,var(--color-fg) 55%,transparent)}
+.dk-front{background:linear-gradient(150deg,color-mix(in srgb,var(--dk-c,#888) 24%,var(--color-bg)),var(--color-bg) 78%)}
+.dk-back{transform:rotateY(180deg);background:linear-gradient(210deg,color-mix(in srgb,var(--dk-c,#888) 14%,var(--color-bg)),var(--color-bg) 70%)}
+.dk-card.sel .dk-face{border-color:var(--color-fg);border-width:2px}
+.dk-city{font-weight:600;font-size:var(--cds-font-size-body)}
+.dk-small{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.dk-big{font-family:var(--font-anthropic-serif);font-size:var(--cds-font-size-title);line-height:1.1;font-variant-numeric:tabular-nums}
+.dk-chip{align-self:flex-start;font-size:var(--cds-font-size-caption);padding:2px 8px;border-radius:999px;background:color-mix(in srgb,var(--dk-c,#888) 22%,transparent)}
+.dk-meter{margin-top:auto;height:8px;border-radius:4px;background:color-mix(in srgb,var(--color-fg) 10%,transparent);position:relative;overflow:hidden}
+.dk-meter i{position:absolute;inset:0 auto 0 0;border-radius:4px;background:linear-gradient(90deg,color-mix(in srgb,var(--dk-c,#888) 55%,transparent),var(--dk-c,#888))}
+.dk-row{display:flex;justify-content:space-between;gap:8px;font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums}
+.dk-row b{font-weight:600}
+
+@media (prefers-reduced-motion:no-preference){
+  .bx-aurora{animation:bx-aur 18s ease-in-out infinite alternate}
+  .bx-grad{animation:bx-shine 8s linear infinite}
+  .dk-card{animation:dk-deal .8s cubic-bezier(.2,.8,.2,1) backwards}
+  .dk-card:nth-child(2){animation-delay:.05s}.dk-card:nth-child(3){animation-delay:.1s}.dk-card:nth-child(4){animation-delay:.15s}.dk-card:nth-child(5){animation-delay:.2s}.dk-card:nth-child(6){animation-delay:.25s}.dk-card:nth-child(7){animation-delay:.3s}.dk-card:nth-child(8){animation-delay:.35s}.dk-card:nth-child(9){animation-delay:.4s}.dk-card:nth-child(10){animation-delay:.45s}
+  .bx-growy{transform-box:fill-box;transform-origin:50% 100%;animation:bx-growy 1s cubic-bezier(.2,.8,.2,1) both}
+  .bx-bob{animation:bx-bob 2.6s ease-in-out infinite}
+}
+/* Polish pass: navigation, gradient frames, premium ring, segmented picker, tables, footer */
+.bx{gap:calc(var(--cds-gap-xl) * 1.4)}
+.bx-card{border-radius:calc(var(--cds-radius) * 1.8);padding:calc(var(--cds-pad-lg) * 1.2)}
+.bx-card h2{font-family:var(--font-anthropic-serif);font-weight:400;font-size:calc(var(--cds-font-size-title) * 0.95);text-wrap:balance}
+.bx-card h3{font-family:var(--font-anthropic-serif);font-weight:400;font-size:calc(var(--cds-font-size-heading) * 1.25);text-wrap:balance}
+.bx-eyebrow{display:inline-flex;align-items:center;gap:8px}
+.bx-eyebrow::before{content:"";width:18px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--bx-a1,var(--color-fg)),var(--bx-a2,var(--color-fg-muted)))}
+.bx-eyebrow.review::before{display:none}
+
+.bx-nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding:6px;border-radius:999px;border:1px solid var(--color-border-line);background:color-mix(in srgb,var(--color-panel) 78%,transparent);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 10px 30px -18px color-mix(in srgb,var(--color-fg) 50%,transparent)}
+.bx-nav::-webkit-scrollbar{display:none}
+.bx-nav-a{flex:0 0 auto;padding:6px 14px;border-radius:999px;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);text-decoration:none;white-space:nowrap;transition:background .3s,color .3s}
+.bx-nav-a:hover{color:var(--color-fg);background:color-mix(in srgb,var(--color-fg) 6%,transparent)}
+.bx-nav-a[aria-current=true]{color:var(--color-bg);background:var(--color-fg)}
+.bx-nav-a:focus-visible{outline:2px solid var(--color-fg);outline-offset:2px}
+
+.bx-hero{border:2px solid transparent;background:linear-gradient(155deg,color-mix(in srgb,var(--bx-a1,#888) 10%,var(--color-panel)) 0%,var(--color-panel) 55%) padding-box,linear-gradient(120deg,var(--bx-a1,var(--color-border-line)),var(--bx-a2,var(--color-border-line)),var(--bx-a3,var(--color-border-line)),var(--bx-a1,var(--color-border-line))) border-box;background-size:auto,300% 300%}
+
+.bx-chips{gap:4px;padding:5px;border-radius:999px;background:color-mix(in srgb,var(--color-fg) 5%,transparent);border:1px solid var(--color-border-line);align-self:flex-start;max-width:100%}
+.bx-chip{border:0;background:transparent;transition:background .3s,color .3s,box-shadow .3s}
+.bx-chip:hover{background:color-mix(in srgb,var(--color-fg) 8%,transparent)}
+.bx-chip[aria-pressed=true]{background:linear-gradient(135deg,var(--bx-a1,var(--color-fg)),var(--bx-a2,var(--color-fg)));color:#fff;box-shadow:0 6px 16px -8px var(--bx-a1,var(--color-fg))}
+
+.bx-fig.key{flex-direction:row;align-items:center;justify-content:space-between;gap:var(--cds-gap-lg);flex-wrap:wrap}
+.bx-key-body{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1 1 16rem}
+.bx-ring{flex:0 0 auto;width:132px;height:132px}
+
+.bx-t{border-collapse:separate;border-spacing:0}
+.bx-t thead th{background:color-mix(in srgb,var(--color-fg) 4%,var(--color-panel));text-transform:uppercase;letter-spacing:.04em;font-size:11px}
+.bx-t thead th:first-child{border-top-left-radius:8px}
+.bx-t thead th:last-child{border-top-right-radius:8px}
+.bx-t tbody tr{transition:background .2s}
+.bx-t tbody tr:hover{background:color-mix(in srgb,var(--bx-a1,var(--color-fg)) 7%,transparent)}
+.bx-t td.pill{text-align:center}
+.bx-t td.pill.yes{color:var(--color-ok);font-weight:600}
+.bx-scroll{border-radius:10px}
+
+.bx-foot-src{flex:1 1 100%;margin:0;line-height:1.6;max-width:110ch}
+.bx-foot-src a{color:var(--color-fg);text-underline-offset:2px}
+.bx-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--cds-gap-sm);padding-top:var(--cds-gap-md);border-top:1px solid var(--color-border-line);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+
+@media (prefers-reduced-motion:no-preference){
+  .bx-hero{animation:bx-rise .9s cubic-bezier(.2,.8,.2,1) backwards,bx-frame 10s linear infinite}
+  .bx-ring-arc{transition:stroke-dasharray 1.2s cubic-bezier(.2,.8,.2,1)}
+}
+@keyframes bx-frame{0%{background-position:0 0,0% 50%}100%{background-position:0 0,300% 50%}}
+
+@keyframes bx-aur{0%{transform:translate(0,0) rotate(0)}50%{transform:translate(6%,-4%) rotate(8deg)}100%{transform:translate(-5%,5%) rotate(-6deg)}}
+@keyframes bx-shine{to{background-position:300% 0}}
+@keyframes dk-deal{from{transform:translateY(40px) rotateX(-55deg) rotateZ(-4deg)}to{transform:none}}
+@keyframes bx-growy{from{transform:scaleY(.02)}to{transform:scaleY(1)}}
+@keyframes bx-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes bx-rise{from{transform:translateY(26px) rotateX(10deg)}to{transform:none}}
+@keyframes bx-flip{from{transform:rotateX(-70deg) translateY(10px)}to{transform:none}}
+@keyframes pd-rock{0%{transform:translateX(-50%) rotateX(-16deg) rotateY(-30deg)}100%{transform:translateX(-50%) rotateX(-12deg) rotateY(-6deg)}}
+@keyframes pd-grow{from{transform:scaleY(.02)}to{transform:scaleY(1)}}
+@keyframes bx-growx{from{transform:scaleX(.02)}to{transform:scaleX(1)}}
+</style>
+
+<div class="bx">
+  <nav class="bx-nav" aria-label="Dashboard sections">
+    <a class="bx-nav-a" href="#top" data-target="top">Overview</a>
+    <a class="bx-nav-a" href="#target" data-target="target">My range</a>
+    <a class="bx-nav-a" href="#deck" data-target="deck">City cards</a>
+    <a class="bx-nav-a" href="#stairs" data-target="stairs">Career ladder</a>
+    <a class="bx-nav-a" href="#compare" data-target="compare">Compare</a>
+    <a class="bx-nav-a" href="#market" data-target="market">Market</a>
+    <a class="bx-nav-a" href="#postings" data-target="postings">Postings</a>
+    <a class="bx-nav-a" href="#method" data-target="method">Method</a>
+  </nav>
+
+  <header class="bx-head bx-banner" id="top">
+    <div class="bx-aurora" aria-hidden="true"></div>
+    <span class="bx-eyebrow review">Market benchmark · prepared for my performance review</span>
+    <h1>AI-enabled <span class="bx-grad">Power BI</span> developer pay in India, 2026</h1>
+    <p>BI developers who use AI in their BI work earn more than developers doing core Power BI work alone. That AI work includes Copilot in Power BI, Microsoft Fabric, and AI-assisted modelling and insights. This is AI for BI, not AI engineering.</p>
+    <div class="bx-headline">
+      <span class="bx-hl-num">₹<span data-draw="tv" data-fixed="1" data-source="tsum" data-field="biai_typical_lpa" data-where="city=All%20prime%20cities">—</span> L</span>
+      <span class="bx-hl-txt">typical pay for an AI-enabled BI developer with 5 years 7 months of experience across the seven prime cities. That is <b data-draw="tv" data-fixed="1" data-source="tsum" data-field="ai_premium_pct" data-where="city=All%20prime%20cities">—</b>% more than core Power BI pay at the same experience. Reported pay ranges from ₹<b data-draw="tv" data-fixed="1" data-source="tsum" data-field="biai_min_lpa" data-where="city=All%20prime%20cities">—</b> L to ₹<b data-draw="tv" data-fixed="1" data-source="tsum" data-field="biai_max_lpa" data-where="city=All%20prime%20cities">—</b> L.</span>
+    </div>
+  </header>
+
+  <section class="bx-card bx-hero" id="target">
+    <span class="bx-eyebrow">AI-enabled BI developer (AI for BI) · 5 years 7 months experience</span>
+    <h2>Minimum and maximum salary in the current market</h2>
+    <div class="bx-chips" role="group" aria-label="Location">
+      <button class="bx-chip" data-city="All prime cities">All prime cities</button>
+      <button class="bx-chip" data-city="Delhi NCR">Delhi NCR</button>
+      <button class="bx-chip" data-city="Gurugram">Gurugram</button>
+      <button class="bx-chip" data-city="New Delhi">New Delhi</button>
+      <button class="bx-chip" data-city="Noida">Noida</button>
+      <button class="bx-chip" data-city="Bengaluru">Bengaluru</button>
+      <button class="bx-chip" data-city="Hyderabad">Hyderabad</button>
+      <button class="bx-chip" data-city="Pune">Pune</button>
+      <button class="bx-chip" data-city="Mumbai">Mumbai</button>
+    </div>
+
+    <div class="bx-figs">
+      <div class="bx-fig key"><div class="bx-key-body"><span class="lbl">Typical pay at 5 years 7 months · <span data-draw="cityname">—</span></span><span class="val">₹<span data-draw="tv" data-source="tsum" data-field="biai_typical_lpa">—</span><small> LPA</small></span><span class="sub">+<span data-draw="tv" data-source="tsum" data-field="ai_premium_pct">—</span>% vs core Power BI. Weighted by <span data-draw="tv" data-source="tsum" data-field="salaries_counted">—</span> salaries across <span data-draw="tv" data-source="tsum" data-field="roles_counted">—</span> role figures.</span></div><div class="bx-ring" data-draw="ring" data-source="tsum" role="img" aria-label="Ring showing the AI premium over core Power BI pay"></div></div>
+      <div class="bx-fig"><span class="lbl">Minimum</span><span class="val">₹<span data-draw="tv" data-source="tsum" data-field="biai_min_lpa">—</span><small> LPA</small></span><span class="sub">Low end of <span data-draw="tv" data-source="tsum" data-field="min_from_role">—</span></span></div>
+      <div class="bx-fig"><span class="lbl">Maximum</span><span class="val">₹<span data-draw="tv" data-source="tsum" data-field="biai_max_lpa">—</span><small> LPA</small></span><span class="sub">High end of <span data-draw="tv" data-source="tsum" data-field="max_from_role">—</span></span></div>
+      <div class="bx-fig"><span class="lbl">Highest single figure: Gurugram BI Engineer</span><span class="val">₹<span data-draw="infl" data-source="troles" data-field="high_lpa" data-where="city=Gurugram&amp;role=BI%20Engineer">—</span><small> LPA</small></span><span class="sub">Small sample: <span data-draw="infl" data-source="troles" data-field="salaries_3_6" data-where="city=Gurugram&amp;role=BI%20Engineer">—</span> salaries in the 3–6 year band, plus an AmbitionBox estimate for 6–9 years. Shown for reference, not counted in the range.</span></div>
+      <div class="bx-fig"><span class="lbl">AI premium</span><span class="val">+<span data-draw="tv" data-source="tsum" data-field="ai_premium_pct">—</span><small> %</small></span><span class="sub">vs core Power BI typical ₹<span data-draw="tv" data-source="tsum" data-field="core_bi_typical_lpa">—</span> L</span></div>
+      <div class="bx-fig"><span class="lbl">Advertised for core Power BI roles</span><span class="val">₹<span data-draw="tv" data-source="tsum" data-field="core_ad_median_lpa">—</span><small> LPA median</small></span><span class="sub">₹<span data-draw="tv" data-source="tsum" data-field="core_ad_min_lpa">—</span>–<span data-draw="tv" data-source="tsum" data-field="core_ad_max_lpa">—</span> L across <span data-draw="tv" data-source="tsum" data-field="core_ad_postings">—</span> plain Power BI postings open to 5y 7m. What employers offer, not what people report earning.</span></div>
+    </div>
+
+    <div class="pd-scene" data-draw="podium" data-source="tsum" role="img" aria-label="3D columns comparing core Power BI pay with AI-enabled BI typical and maximum pay and the top job posting for the selected location"></div>
+
+    <div class="bx-legend">
+      <span><i class="bx-sw tick" data-sw="core"></i>Core Power BI typical</span>
+      <span><i class="bx-sw" data-sw="0"></i>AI-enabled BI minimum to maximum</span>
+      <span><i class="bx-sw dot" data-sw="dot"></i>AI-enabled BI typical</span>
+      <span><i class="bx-sw thin" data-sw="4"></i>Core Power BI postings (advertised)</span>
+      <span><i class="bx-sw thin" data-sw="2"></i>AI-enabled BI postings (advertised)</span>
+    </div>
+    <div class="bx-chart" data-draw="tgtbar" data-source="tsum"></div>
+
+    <div class="bx-split" id="drilldown">
+      <div>
+        <h4>Drill-down: roles behind this range</h4>
+        <p class="bx-note">Each role's pay at 5 years 7 months, interpolated between its 3–6 and 6–9 year bands. Only rows marked "yes" set the minimum and maximum. Those need at least 10 salaries in the 3–6 year band, at least 5 reported salaries in the 6–9 year band, and data updated in the last six months. Click a row to see that city.</p>
+        <div class="bx-scroll bx-tall">
+          <table class="bx-t" data-source="troles" data-row-key="city,role">
+            <thead><tr>
+              <th class="l" data-field="city">City</th>
+              <th class="l" data-field="role">Role</th>
+              <th class="l" data-field="group">Group</th>
+              <th data-field="low_lpa">Low</th>
+              <th data-field="mid_lpa">Mid</th>
+              <th data-field="high_lpa">High</th>
+              <th data-field="salaries_3_6">Salaries 3–6</th>
+              <th data-field="counts_for_range">Counted</th>
+              <th class="l" data-field="method">Method</th>
+            </tr></thead>
+            <tbody data-draw="troles"></tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h4>Drill-down: job postings open to 5 years 7 months</h4>
+        <p class="bx-note">Naukri postings that mention Fabric, Copilot, Azure or AI, show their pay, and accept this experience. Read on 2 Nov 2026.</p>
+        <div class="bx-scroll bx-tall">
+          <table class="bx-t" data-source="tposts" data-row-key="city,company">
+            <thead><tr>
+              <th class="l" data-field="city">City</th>
+              <th class="l" data-field="title">Role</th>
+              <th class="l" data-field="company">Company</th>
+              <th data-field="experience">Experience</th>
+              <th data-field="salary_min_lpa">Min LPA</th>
+              <th data-field="salary_max_lpa">Max LPA</th>
+              <th class="l" data-field="ai_skills">AI / Fabric skills</th>
+            </tr></thead>
+            <tbody data-draw="tposts"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bx-card" id="deck">
+    <span class="bx-eyebrow">City deck · 5 years 7 months</span>
+    <h3>Pick a city card</h3>
+    <p class="bx-note">Each card shows AI-enabled BI pay at 5 years 7 months. Click a card to flip it for the detail. The cards above and below switch to that city too.</p>
+    <div class="dk-grid" data-draw="deck" data-source="tsum"></div>
+  </section>
+
+  <section class="bx-card" id="stairs">
+    <span class="bx-eyebrow">Career staircase</span>
+    <h3>Where 5 years 7 months sits on the ladder in <span data-draw="cityname">—</span></h3>
+    <p class="bx-note">Each step is the salary-weighted midpoint for an experience band. The pin marks 5 years 7 months. Its band runs from the typical AI-enabled BI pay up to where the upper half of the range begins, midway between typical and maximum. The dashed line is my ask.</p>
+    <div class="bx-legend">
+      <span><i class="bx-sw" data-sw="core"></i>Core Power BI</span>
+      <span><i class="bx-sw" data-sw="0"></i>AI-enabled BI</span>
+      <span><i class="bx-sw" data-sw="1"></i>Typical to upper range at 5y 7m</span>
+      <span><i class="bx-sw thin" data-sw="1"></i>My ask: ₹12 L+</span>
+    </div>
+    <div class="bx-chart tall" data-draw="stairs" data-source="mcurve tsum"></div>
+  </section>
+
+  <div class="bx-grid">
+    <div class="bx-card" id="compare">
+      <h3>Every prime location at 5 years 7 months</h3>
+      <p class="bx-note">Bar: AI-enabled BI minimum to maximum. Dot: typical. Tick: core Power BI typical. Click a city to drill down.</p>
+      <div class="bx-chart tall" data-draw="cmp" data-source="tsum"></div>
+    </div>
+    <div class="bx-card" id="premium">
+      <h3>AI premium by location</h3>
+      <p class="bx-note">How much more the typical AI-enabled BI developer earns than a core Power BI developer, at 5 years 7 months.</p>
+      <div class="bx-chart tall" data-draw="prem" data-source="tsum"></div>
+    </div>
+  </div>
+
+  <div class="bx-card" id="curve">
+    <h3>Pay by experience in <span data-draw="cityname">—</span></h3>
+    <p class="bx-note">Salary-weighted midpoint per experience band. The dashed line marks 5 years 7 months. Use the location buttons above to switch city.</p>
+    <div class="bx-legend">
+      <span><i class="bx-sw" data-sw="core"></i>Core BI (Power BI Developer, BI Developer)</span>
+      <span><i class="bx-sw" data-sw="0"></i>AI-enabled BI roles (Fabric, Copilot, Azure)</span>
+    </div>
+    <div class="bx-chart tall" data-draw="curve" data-source="mcurve"></div>
+  </div>
+
+  <div class="bx-card" id="market">
+    <h3>Market pay by role and location, 2026</h3>
+    <p class="bx-note">Midpoint of the AmbitionBox range in ₹ LPA. Italic cells have fewer than 10 salaries or are AmbitionBox estimates. Click a cell to open that city in the card above.</p>
+    <div class="bx-ctl">
+      <label for="bx-band">Experience</label>
+      <select id="bx-band">
+        <option value="1-3">1–3 yrs</option>
+        <option value="3-6" selected>3–6 yrs</option>
+        <option value="6-9">6–9 yrs</option>
+        <option value="9-12">9–12 yrs</option>
+      </select>
+    </div>
+    <div class="bx-scroll" data-draw="heat" data-source="market"></div>
+  </div>
+
+  <div class="bx-card" id="postings">
+    <h3>All Fabric, Copilot and AI postings with pay shown</h3>
+    <div class="bx-ctl"><label for="bx-q">Search</label><input id="bx-q" type="search" placeholder="Role, company, city, skill…"></div>
+    <div class="bx-scroll bx-tall">
+      <table class="bx-t" data-source="postings" data-row-key="title,company">
+        <thead><tr>
+          <th class="l" data-field="title"><button class="bx-sort" data-k="title">Role</button></th>
+          <th class="l" data-field="company"><button class="bx-sort" data-k="company">Company</button></th>
+          <th data-field="exp_min"><button class="bx-sort" data-k="exp_min">Exp from</button></th>
+          <th data-field="exp_max"><button class="bx-sort" data-k="exp_max">Exp to</button></th>
+          <th data-field="salary_min_lpa"><button class="bx-sort" data-k="salary_min_lpa">Min LPA</button></th>
+          <th data-field="salary_max_lpa"><button class="bx-sort" data-k="salary_max_lpa">Max LPA</button></th>
+          <th class="l" data-field="locations"><button class="bx-sort" data-k="locations">Locations</button></th>
+          <th class="l" data-field="ai_skills"><button class="bx-sort" data-k="ai_skills">Skills</button></th>
+        </tr></thead>
+        <tbody data-draw="postings"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <section class="bx-card" id="method">
+    <h3>How the numbers are built</h3>
+    <ul class="bx-src">
+      <li>No job portal has an "AI-enabled BI developer" title. This profile is built from AmbitionBox BI roles whose work takes in Fabric, Copilot or AI-assisted analytics: Senior Power BI Developer, Senior BI Developer, BI Engineer, Power BI Consultant, Analytics Engineer and Power Platform Developer. Core BI means Power BI Developer and BI Developer.</li>
+      <li>AI Engineer and Azure Data Engineer pay are left out on purpose. AI engineers build and train AI models, and Azure data engineers build data pipelines. Both are different jobs from using AI inside BI development, so neither is a fair comparison here.</li>
+      <li>For 5 years 7 months, each role's low and high are read a third of the way from its 3–6 year band (centred at 4.5 years) to its 6–9 year band (centred at 7.5 years). The minimum is the lowest low and the maximum the highest high among roles that meet three conditions: at least 10 salaries in the 3–6 year band, at least 5 reported salaries in the 6–9 year band, and AmbitionBox data updated within the last six months. Older or thinner figures still appear in the drill-down, marked as not counted. The typical figure is the salary-weighted midpoint.</li>
+      <li>All figures are annual fixed CTC in ₹ lakh, as reported by employees on <a href="https://www.ambitionbox.com/profile/power-bi-developer-salary">AmbitionBox</a> (updated Oct–Nov 2026). Job postings come from <a href="https://www.naukri.com/microsoft-fabric-power-bi-jobs-in-bengaluru">Naukri</a> searches for Microsoft Fabric, Power BI Copilot, Power BI generative AI and Power BI AI/ML, read on 2 Nov 2026. Only postings that show pay are included.</li>
+      <li>Outside surveys put AI-skill pay premiums at 20–56%, but they are not specific to Power BI or Fabric, so they are not used in any figure here.</li>
+      <li>Glassdoor blocks automated reading, so it is not included. LinkedIn has retired its salary pages, and its Power BI job postings in India rarely show pay (none of 60 Gurugram listings checked on 2 Nov 2026 did), so LinkedIn is not included either.</li>
+    </ul>
+  </section>
+
+  <footer class="bx-foot">
+    <span>Market benchmark for an AI-enabled Power BI developer · 5 years 7 months</span>
+    <span>Data: AmbitionBox employee-reported salaries and Naukri job postings, collected November 2026</span>
+    <p class="bx-foot-src">Sources: AmbitionBox salary pages for
+      <a href="https://www.ambitionbox.com/profile/power-bi-developer-salary">Power BI Developer</a>,
+      <a href="https://www.ambitionbox.com/profile/senior-power-bi-developer-salary">Senior Power BI Developer</a>,
+      <a href="https://www.ambitionbox.com/profile/bi-developer-salary">BI Developer</a>,
+      <a href="https://www.ambitionbox.com/profile/senior-bi-developer-salary">Senior BI Developer</a>,
+      <a href="https://www.ambitionbox.com/profile/bi-engineer-salary">BI Engineer</a>,
+      <a href="https://www.ambitionbox.com/profile/power-bi-consultant-salary">Power BI Consultant</a>,
+      <a href="https://www.ambitionbox.com/profile/analytics-engineer-salary">Analytics Engineer</a> and
+      <a href="https://www.ambitionbox.com/profile/power-platform-developer-salary">Power Platform Developer</a>
+      (each read city by city, e.g. <a href="https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/gurgaon-location">…/gurgaon-location</a>);
+      Naukri job searches for
+      <a href="https://www.naukri.com/microsoft-fabric-power-bi-jobs">Microsoft Fabric + Power BI</a>,
+      <a href="https://www.naukri.com/power-bi-copilot-jobs">Power BI Copilot</a>,
+      <a href="https://www.naukri.com/power-bi-generative-ai-jobs">Power BI generative AI</a> and
+      <a href="https://www.naukri.com/power-bi-developer-jobs">Power BI Developer</a>.
+      All data files: <a href="https://github.com/Ayush810/AI-Enabled-BI-Developer/tree/main/data">github.com/Ayush810/AI-Enabled-BI-Developer/tree/main/data</a>.</p>
+  </footer>
+</div>
+
+<script>
+const CITIES = ['Gurugram', 'New Delhi', 'Noida', 'Bengaluru', 'Hyderabad', 'Pune', 'Mumbai'];
+const NCR = ['Gurugram', 'New Delhi', 'Noida'];
+// AI Engineer ("AI ceiling") stays in the data files but is not shown: it is a different job from AI-enabled BI.
+const GROUPS = ['Core BI', 'BI + AI/Fabric'];
+const TARGET_YEARS = 5 + 7 / 12;
+const num = (v) => (v === '' || v == null || isNaN(+v)) ? null : +v;
+const members = (c) => c === 'All prime cities' ? CITIES : c === 'Delhi NCR' ? NCR : [c];
+const parseWhere = (s) => Object.fromEntries((s || '').split('&').filter(Boolean).map((p) => p.split('=').map(decodeURIComponent)));
+const groupColor = (g) => g === 'Core BI' ? 'var(--cds-chart-reference)' : g === 'AI ceiling' ? 'var(--cds-chart-muted)' : dash.colors[0];
+
+window.bxCity = 'All prime cities';
+
+dash.calc('mcurve', {
+  inputs: ['market'],
+  title: 'Pay curve by role group',
+  description: 'Salary-weighted midpoint for each city, role group and experience band, plus Delhi NCR and all prime cities pooled (estimates weighted as one salary).',
+  fn: (market) => {
+    const all = ['Gurugram', 'New Delhi', 'Noida', 'Bengaluru', 'Hyderabad', 'Pune', 'Mumbai'];
+    const sets = all.map((c) => [c, [c]]).concat([['Delhi NCR', ['Gurugram', 'New Delhi', 'Noida']], ['All prime cities', all]]);
+    const out = [];
+    for (const [label, cs] of sets) {
+      for (const g of ['Core BI', 'BI + AI/Fabric', 'AI ceiling']) {
+        for (const b of ['1-3', '3-6', '6-9', '9-12']) {
+          const rows = market.filter((r) => cs.includes(r.city) && r.group === g && r.exp_band === b);
+          if (!rows.length) continue;
+          let w = 0, s = 0, n = 0;
+          for (const r of rows) { const k = Math.max(1, Number(r.salaries) || 0); w += k; s += Number(r.mid_lpa) * k; n += Number(r.salaries) || 0; }
+          out.push({city: label, group: g, exp_band: b, mid: Math.round((s / w) * 100) / 100, salaries: n});
+        }
+      }
+    }
+    return out;
+  },
+});
+
+const select = (c) => {
+  window.bxCity = c;
+  for (const b of document.querySelectorAll('.bx-chip')) b.setAttribute('aria-pressed', b.dataset.city === c ? 'true' : 'false');
+  for (const card of document.querySelectorAll('.dk-card')) card.classList.toggle('sel', card.dataset.city === c);
+  for (const name of ['tv', 'ring', 'podium', 'tgtbar', 'stairs', 'troles', 'tposts', 'cmp', 'prem', 'curve', 'cityname']) dash.draw(name);
+};
+for (const b of document.querySelectorAll('.bx-chip')) {
+  b.setAttribute('aria-pressed', b.dataset.city === window.bxCity ? 'true' : 'false');
+  b.addEventListener('click', () => select(b.dataset.city));
+}
+for (const sw of document.querySelectorAll('[data-sw]')) {
+  const k = sw.dataset.sw;
+  sw.style.background = k === 'core' ? 'var(--cds-chart-reference)' : k === 'muted' ? 'var(--cds-chart-muted)' : k === 'dot' ? 'var(--color-fg)' : dash.colors[+k];
+}
+for (const el of document.querySelectorAll('.bx-fig.key, .bx-hero, .pd-scene')) el.style.setProperty('--bx-accent', dash.colors[0]);
+for (const el of document.querySelectorAll('.bx, .bx-banner')) {
+  el.style.setProperty('--bx-a1', dash.colors[0]);
+  el.style.setProperty('--bx-a2', dash.colors[1]);
+  el.style.setProperty('--bx-a3', dash.colors[2]);
+}
+
+const REDUCE = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+if (!REDUCE) {
+  for (const c of document.querySelectorAll('.bx-card')) {
+    c.addEventListener('pointermove', (ev) => {
+      if (ev.pointerType !== 'mouse') return;
+      const b = c.getBoundingClientRect();
+      const px = (ev.clientX - b.left) / b.width - 0.5, py = (ev.clientY - b.top) / b.height - 0.5;
+      c.style.transform = `rotateX(${(-py * 2.5).toFixed(2)}deg) rotateY(${(px * 3.5).toFixed(2)}deg) translateZ(6px)`;
+    });
+    c.addEventListener('pointerleave', () => { c.style.transform = ''; });
+  }
+}
+
+dash.draw('cityname', (el) => { el.textContent = window.bxCity === 'All prime cities' ? 'all prime cities' : window.bxCity; });
+
+dash.draw('tv', (el) => {
+  if (!el.dataset.fixed) el.dataset.where = 'city=' + encodeURIComponent(window.bxCity);
+  const d = dash.data('tsum');
+  const w = parseWhere(el.dataset.where);
+  const row = d.status === 'ok' ? d.data.find((r) => r.city === w.city) : null;
+  const v = row ? row[el.dataset.field] : null;
+  el.textContent = v == null || v === '' ? '—' : String(v);
+});
+
+const tipLines = (tip, head, lines) => {
+  tip.replaceChildren();
+  const h = document.createElement('div');
+  h.className = 'h';
+  h.textContent = head;
+  tip.append(h);
+  for (const [color, text] of lines) {
+    const row = document.createElement('div');
+    if (color) { const i = document.createElement('i'); i.style.background = color; row.append(i); }
+    row.append(text);
+    tip.append(row);
+  }
+};
+const placeTip = (el, tip, px, py) => {
+  const w = tip.offsetWidth, h = tip.offsetHeight, W = el.clientWidth;
+  let left = px + 14;
+  if (left + w > W) left = px - w - 14;
+  tip.style.left = Math.max(0, left) + 'px';
+  tip.style.top = Math.max(0, Math.min(el.clientHeight - h, py - h / 2)) + 'px';
+};
+const makeTip = (el) => { const t = document.createElement('div'); t.className = 'bx-tip'; t.hidden = true; el.append(t); return t; };
+const styleAxis = (g) => {
+  g.attr('font-size', null).attr('font-family', null);
+  g.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)');
+  g.selectAll('.domain').attr('stroke', 'var(--cds-chart-axis)');
+  g.selectAll('.tick line').attr('stroke', 'var(--cds-chart-axis)');
+};
+const textW = (svg, s) => { const t = svg.append('text').style('font-size', 'var(--cds-font-size-caption)').text(s); const w = t.node().getComputedTextLength(); t.remove(); return w; };
+const L = (v) => '₹' + (+v).toFixed(1) + ' L';
+
+// Extruded bar: front face plus a lighter top and a darker side, so flat SVG bars read as 3D blocks.
+const bar3d = (g, x0, y0, w, h, fill, {d = 7, opacity = 1, grow = false, growY = false} = {}) => {
+  const b = g.append('g').attr('opacity', opacity);
+  if (grow) b.attr('class', 'bx-grow');
+  if (growY) b.attr('class', 'bx-growy');
+  b.append('polygon').attr('points', `${x0},${y0} ${x0 + d},${y0 - d} ${x0 + w + d},${y0 - d} ${x0 + w},${y0}`).style('fill', `color-mix(in srgb, ${fill} 60%, white)`);
+  b.append('polygon').attr('points', `${x0 + w},${y0} ${x0 + w + d},${y0 - d} ${x0 + w + d},${y0 + h - d} ${x0 + w},${y0 + h}`).style('fill', `color-mix(in srgb, ${fill} 58%, black)`);
+  b.append('rect').attr('x', x0).attr('y', y0).attr('width', Math.max(0, w)).attr('height', h).style('fill', fill);
+  return b;
+};
+window.bxGrown = window.bxGrown || new Set();
+const firstDraw = (name) => { if (window.bxGrown.has(name)) return false; window.bxGrown.add(name); return !REDUCE; };
+
+dash.draw('infl', (el) => {
+  const d = dash.data(el.dataset.source);
+  const w = parseWhere(el.dataset.where);
+  const row = d.status === 'ok' ? d.data.find((r) => Object.keys(w).every((k) => String(r[k]) === w[k])) : null;
+  const v = row ? row[el.dataset.field] : null;
+  el.textContent = v == null || v === '' ? '—' : String(v);
+});
+
+dash.draw('podium', (el) => {
+  el.replaceChildren();
+  const d = dash.data('tsum');
+  if (d.status !== 'ok') return;
+  const r = d.data.find((x) => x.city === window.bxCity);
+  if (!r) return;
+  const cols = [
+    ['Core Power BI\ntypical', num(r.core_bi_typical_lpa), 'var(--cds-chart-muted)'],
+    ['AI-enabled BI\ntypical', num(r.biai_typical_lpa), dash.colors[0]],
+    ['AI-enabled BI\nmaximum', num(r.biai_max_lpa), dash.colors[1]],
+    ['Top job posting\nat 5y 7m', num(r.posting_max_lpa), dash.colors[2]],
+  ].filter((c) => c[1] != null);
+  const floor = document.createElement('div');
+  floor.className = 'pd-floor';
+  el.append(floor);
+  const stage = document.createElement('div');
+  stage.className = 'pd-stage';
+  const maxH = Math.max(110, Math.min(180, (el.clientHeight || 290) - 120));
+  const maxV = d3.max(cols, (c) => c[1]);
+  const w = (el.clientWidth || 600) < 460 ? 38 : 56;
+  const grow = firstDraw('podium');
+  for (const [lab, v, c] of cols) {
+    const col = document.createElement('div');
+    col.className = 'pd-col';
+    col.style.setProperty('--h', Math.round((v / maxV) * maxH) + 'px');
+    col.style.setProperty('--w', w + 'px');
+    col.style.setProperty('--c', c);
+    const bar = document.createElement('div');
+    bar.className = 'pd-bar' + (grow ? ' grow' : '');
+    for (const f of ['back', 'left', 'right', 'top', 'front']) { const face = document.createElement('div'); face.className = 'pd-f pd-' + f; bar.append(face); }
+    const val = document.createElement('div');
+    val.className = 'pd-val';
+    val.textContent = '₹' + v.toFixed(1) + ' L';
+    const lbl = document.createElement('div');
+    lbl.className = 'pd-lbl';
+    lbl.style.whiteSpace = 'pre-line';
+    lbl.textContent = lab;
+    col.append(bar, val, lbl);
+    stage.append(col);
+  }
+  el.append(stage);
+});
+
+
+dash.draw('ring', (el) => {
+  el.replaceChildren();
+  const d = dash.data('tsum');
+  if (d.status !== 'ok') return;
+  const r = d.data.find((x) => x.city === window.bxCity);
+  const p = r ? num(r.ai_premium_pct) : null;
+  if (p == null) return;
+  const S = 132, R = 52, C = 2 * Math.PI * R;
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${S} ${S}`);
+  const defs = svg.append('defs');
+  const grad = defs.append('linearGradient').attr('id', 'bx-ring-grad').attr('x1', 0).attr('y1', 0).attr('x2', 1).attr('y2', 1);
+  grad.append('stop').attr('offset', '0%').style('stop-color', dash.colors[0]);
+  grad.append('stop').attr('offset', '100%').style('stop-color', dash.colors[1]);
+  svg.append('circle').attr('cx', S / 2).attr('cy', S / 2).attr('r', R).attr('fill', 'none').attr('stroke', 'var(--cds-chart-grid)').attr('stroke-width', 12);
+  const arc = svg.append('circle').attr('class', 'bx-ring-arc').attr('cx', S / 2).attr('cy', S / 2).attr('r', R).attr('fill', 'none')
+    .attr('stroke', 'url(#bx-ring-grad)').attr('stroke-width', 12).attr('stroke-linecap', 'round')
+    .attr('transform', `rotate(-90 ${S / 2} ${S / 2})`).attr('stroke-dasharray', `0 ${C}`);
+  const target = `${(C * Math.min(p, 100)) / 100} ${C}`;
+  if (REDUCE) arc.attr('stroke-dasharray', target); else requestAnimationFrame(() => requestAnimationFrame(() => arc.attr('stroke-dasharray', target)));
+  svg.append('text').attr('x', S / 2).attr('y', S / 2 - 2).attr('text-anchor', 'middle').attr('fill', 'var(--color-fg)')
+    .style('font-family', 'var(--font-anthropic-serif)').style('font-size', '26px').text(`+${Math.round(p)}%`);
+  svg.append('text').attr('x', S / 2).attr('y', S / 2 + 20).attr('text-anchor', 'middle').attr('fill', 'var(--color-fg-muted)')
+    .style('font-size', '11px').text('AI premium');
+});
+
+const goTo = (id) => {
+  const t = document.getElementById(id);
+  if (!t) return;
+  t.scrollIntoView({behavior: REDUCE ? 'auto' : 'smooth', block: 'start'});
+  dash.setLink(id);
+};
+for (const a of document.querySelectorAll('.bx-nav-a')) {
+  a.addEventListener('click', (ev) => { ev.preventDefault(); goTo(a.dataset.target); });
+}
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (!e.isIntersecting) continue;
+      for (const a of document.querySelectorAll('.bx-nav-a')) a.setAttribute('aria-current', a.dataset.target === e.target.id ? 'true' : 'false');
+    }
+  }, {root: document, rootMargin: '-35% 0px -60% 0px'});
+  for (const a of document.querySelectorAll('.bx-nav-a')) { const s = document.getElementById(a.dataset.target); if (s) io.observe(s); }
+}
+{
+  const first = document.querySelector('.bx-nav-a');
+  if (first) first.setAttribute('aria-current', 'true');
+  const named = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+  if (named) setTimeout(() => goTo(named.id), 400);
+}
+
+window.bxFlipped = window.bxFlipped || new Set();
+dash.draw('deck', (el) => {
+  el.replaceChildren();
+  const d = dash.data('tsum');
+  if (d.status !== 'ok') return;
+  const rows = cmpOrder(d.data);
+  const maxTyp = d3.max(rows, (r) => num(r.biai_typical_lpa)) || 1;
+  const div = (cls, text) => { const e = document.createElement('div'); e.className = cls; if (text != null) e.textContent = text; return e; };
+  const row = (label, value) => { const e = div('dk-row'); const a = document.createElement('span'); a.textContent = label; const b = document.createElement('b'); b.textContent = value; e.append(a, b); return e; };
+  rows.forEach((r, i) => {
+    const card = document.createElement('button');
+    card.type = 'button';
+    card.className = 'dk-card' + (window.bxFlipped.has(r.city) ? ' flipped' : '') + (r.city === window.bxCity ? ' sel' : '');
+    card.dataset.city = r.city;
+    card.style.setProperty('--dk-c', dash.colors[i % dash.colors.length]);
+    card.setAttribute('aria-label', `${r.city}: typical ₹${r.biai_typical_lpa} lakh. Flip for details.`);
+    const front = div('dk-face dk-front');
+    const meter = div('dk-meter');
+    const fill = document.createElement('i');
+    fill.style.width = Math.round((num(r.biai_typical_lpa) / maxTyp) * 100) + '%';
+    meter.append(fill);
+    front.append(div('dk-city', r.city), div('dk-small', 'Typical at 5y 7m'), div('dk-big', L(r.biai_typical_lpa)), div('dk-chip', `+${r.ai_premium_pct}% vs core Power BI`), meter);
+    const back = div('dk-face dk-back');
+    back.append(div('dk-city', r.city),
+      row('Minimum', L(r.biai_min_lpa)),
+      row('Maximum', L(r.biai_max_lpa)),
+      row('Core Power BI', r.core_bi_typical_lpa === '' ? '—' : L(r.core_bi_typical_lpa)),
+      row('Postings', r.posting_min_lpa === '' ? 'none with pay' : `${L(r.posting_min_lpa)}–${L(r.posting_max_lpa)}`),
+      div('dk-small', `Based on ${d3.format(',')(num(r.salaries_counted))} salaries`));
+    card.append(front, back);
+    card.addEventListener('click', () => {
+      const f = card.classList.toggle('flipped');
+      if (f) window.bxFlipped.add(r.city); else window.bxFlipped.delete(r.city);
+      if (window.bxCity !== r.city) select(r.city);
+    });
+    el.append(card);
+  });
+});
+
+dash.draw('stairs', (el) => {
+  el.replaceChildren();
+  const d = dash.data('mcurve'), t = dash.data('tsum');
+  if (d.status !== 'ok') return;
+  const bands = ['1-3', '3-6', '6-9', '9-12'];
+  const label = {'1-3': '1–3 yrs', '3-6': '3–6 yrs', '6-9': '6–9 yrs', '9-12': '9–12 yrs'};
+  const rows = d.data.filter((r) => r.city === window.bxCity && GROUPS.includes(r.group));
+  if (!rows.length) return;
+  const tr = t.status === 'ok' ? t.data.find((r) => r.city === window.bxCity) : null;
+  const typ = tr ? num(tr.biai_typical_lpa) : null;
+  const max = tr ? num(tr.biai_max_lpa) : null;
+  // Upper half of the AI-enabled BI range starts midway between typical and maximum.
+  const upper = typ != null && max != null ? (typ + max) / 2 : null;
+  const ASK = 12; // the user's own ask, ₹ lakh a year, not a market figure
+  const W = Math.max(300, el.clientWidth), H = 360, depth = 12;
+  const m = {t: 54, r: 20 + depth, b: 34, l: 44};
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+  const x = d3.scaleBand(bands, [m.l, W - m.r]).paddingInner(0.28).paddingOuter(0.12);
+  const xi = d3.scaleBand(GROUPS, [0, x.bandwidth()]).padding(0.14);
+  const ymax = d3.max([d3.max(rows, (r) => r.mid), upper ?? 0, ASK]) * 1.12;
+  const y = d3.scaleLinear([0, ymax], [H - m.b, m.t]).nice();
+  svg.append('g').selectAll('line').data(y.ticks(5)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickFormat((b) => label[b]).tickSizeOuter(0)).call(styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat((v) => '₹' + v + 'L').tickSize(0).tickPadding(6)).call(styleAxis).call((g) => g.select('.domain').remove());
+  const grow = firstDraw('stairs');
+  const g = svg.append('g');
+  const tops = [];
+  for (const r of rows) {
+    const x0 = x(r.exp_band) + xi(r.group), w = xi.bandwidth(), y0 = y(r.mid);
+    bar3d(g, x0, y0, w, y(0) - y0, groupColor(r.group), {d: depth, growY: grow});
+    g.append('text').attr('x', x0 + w / 2).attr('y', y0 - depth - 6).attr('text-anchor', 'middle').attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(r.mid.toFixed(1));
+    if (r.group === 'BI + AI/Fabric') tops.push([x0 + w / 2 + depth / 2, y0 - depth / 2]);
+  }
+  if (tops.length > 1) {
+    const step = d3.line().curve(d3.curveStepAfter);
+    svg.append('path').attr('d', step(tops)).attr('fill', 'none').attr('stroke', dash.colors[0]).attr('stroke-width', 1.5).attr('stroke-dasharray', '3 4').attr('opacity', 0.8);
+  }
+  svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(ASK)).attr('y2', y(ASK)).attr('stroke', dash.colors[1]).attr('stroke-width', 2).attr('stroke-dasharray', '7 5');
+  svg.append('text').attr('x', W - m.r).attr('y', y(ASK) + 14).attr('text-anchor', 'end').attr('fill', dash.colors[1]).style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(`My ask: ₹${ASK} L+`);
+  if (typ != null) {
+    const c36 = x('3-6') + x.bandwidth() / 2, c69 = x('6-9') + x.bandwidth() / 2;
+    const px = c36 + (c69 - c36) * ((TARGET_YEARS - 4.5) / 3);
+    if (upper != null) {
+      svg.append('rect').attr('x', px - 7).attr('width', 14).attr('y', y(upper)).attr('height', y(typ) - y(upper)).attr('rx', 7)
+        .style('fill', `color-mix(in srgb, ${dash.colors[1]} 45%, transparent)`).attr('stroke', dash.colors[1]);
+      svg.append('circle').attr('cx', px).attr('cy', y(upper)).attr('r', 5).attr('fill', dash.colors[1]);
+    }
+    const py = y(upper ?? typ);
+    const pin = svg.append('g').attr('transform', `translate(${px},${py})`);
+    const inner = pin.append('g').attr('class', 'bx-bob');
+    inner.append('line').attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', -30).attr('stroke', 'var(--color-fg)').attr('stroke-width', 2);
+    inner.append('circle').attr('cx', 0).attr('cy', 0).attr('r', 5).attr('fill', 'var(--color-fg)');
+    inner.append('circle').attr('cx', 0).attr('cy', -36).attr('r', 9).attr('fill', dash.colors[3]).attr('stroke', 'var(--color-panel)').attr('stroke-width', 2);
+    // Say "₹12 L+" only where the market band actually reaches past the ask.
+    const tag = upper != null && upper > ASK ? `You are here · 5y 7m · ${L(typ)} to ₹${ASK} L+`
+      : upper != null ? `You are here · 5y 7m · ${L(typ)} to ${L(upper)}` : `You are here · 5y 7m · ${L(typ)}`;
+    const tw = textW(svg, tag) + 16;
+    const left = Math.max(m.l - px, Math.min(W - m.r - px - tw, -tw / 2));
+    inner.append('rect').attr('x', left).attr('y', -72).attr('width', tw).attr('height', 22).attr('rx', 11).style('fill', 'var(--cds-surface-popover)').attr('stroke', 'var(--cds-border)');
+    inner.append('text').attr('x', left + tw / 2).attr('y', -61).attr('dy', '0.35em').attr('text-anchor', 'middle').attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(tag);
+  }
+});
+
+dash.draw('tgtbar', (el) => {
+  el.replaceChildren();
+  const d = dash.data('tsum');
+  if (d.status !== 'ok') return;
+  const r = d.data.find((x) => x.city === window.bxCity);
+  if (!r) return;
+  const v = Object.fromEntries(Object.entries(r).map(([k, x]) => [k, num(x)]));
+  const tracks = [
+    {label: 'Core Power BI', kind: 'core'},
+    {label: 'Core Power BI ads', kind: 'coread'},
+    {label: 'AI-enabled BI', kind: 'biai'},
+    {label: 'AI-enabled BI ads', kind: 'post'},
+  ];
+  const W = Math.max(300, el.clientWidth), rowH = 46;
+  const svg = d3.select(el).append('svg').attr('width', '100%');
+  const lw = d3.max(tracks, (t) => textW(svg, t.label)) + 14;
+  const m = {t: 8, r: 18, b: 28, l: lw};
+  const H = m.t + m.b + tracks.length * rowH;
+  svg.attr('viewBox', `0 0 ${W} ${H}`);
+  const xmax = d3.max([v.biai_max_lpa, v.posting_max_lpa, v.core_ad_max_lpa].filter((x) => x != null)) * 1.06;
+  const x = d3.scaleLinear([0, xmax], [m.l, W - m.r]).nice();
+  const y = d3.scaleBand(tracks.map((t) => t.label), [m.t, H - m.b]).padding(0.38);
+  svg.append('g').selectAll('line').data(x.ticks(6)).join('line').attr('x1', x).attr('x2', x).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(6).tickFormat((t) => '₹' + t + 'L').tickSizeOuter(0)).call(styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).tickSize(0).tickPadding(10)).call(styleAxis).call((g) => g.select('.domain').remove());
+  const cy = (lab) => y(lab) + y.bandwidth() / 2;
+  const g = svg.append('g');
+  if (v.core_bi_typical_lpa != null) {
+    g.append('line').attr('x1', x(v.core_bi_typical_lpa)).attr('x2', x(v.core_bi_typical_lpa)).attr('y1', y('Core Power BI')).attr('y2', y('Core Power BI') + y.bandwidth()).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-width', 3);
+    g.append('text').attr('x', x(v.core_bi_typical_lpa) + 8).attr('y', cy('Core Power BI')).attr('dy', '0.35em').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text(L(v.core_bi_typical_lpa) + ' typical');
+    g.append('line').attr('x1', x(v.core_bi_typical_lpa)).attr('x2', x(v.core_bi_typical_lpa)).attr('y1', y('Core Power BI') + y.bandwidth()).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '3 3');
+  }
+  if (v.core_ad_min_lpa != null) {
+    g.append('line').attr('x1', x(v.core_ad_min_lpa)).attr('x2', x(v.core_ad_max_lpa)).attr('y1', cy('Core Power BI ads')).attr('y2', cy('Core Power BI ads')).attr('stroke', dash.colors[4]).attr('stroke-width', 3).attr('stroke-linecap', 'round');
+    g.append('circle').attr('cx', x(v.core_ad_median_lpa)).attr('cy', cy('Core Power BI ads')).attr('r', 5).attr('fill', dash.colors[4]).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5);
+    g.append('text').attr('x', x(v.core_ad_max_lpa) + 6).attr('y', cy('Core Power BI ads')).attr('dy', '0.35em').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text(`median ${L(v.core_ad_median_lpa)}`);
+  } else {
+    g.append('text').attr('x', m.l + 4).attr('y', cy('Core Power BI ads')).attr('dy', '0.35em').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('No plain Power BI postings with pay shown here');
+  }
+  const growT = firstDraw('tgtbar');
+  bar3d(g, x(v.biai_min_lpa), y('AI-enabled BI'), Math.max(3, x(v.biai_max_lpa) - x(v.biai_min_lpa)), y.bandwidth(), dash.colors[0], {d: 8, grow: growT});
+  g.append('circle').attr('cx', x(v.biai_typical_lpa)).attr('cy', cy('AI-enabled BI')).attr('r', 7).attr('fill', 'var(--color-fg)').attr('stroke', 'var(--color-panel)').attr('stroke-width', 2);
+  for (const [val, anchor, dx] of [[v.biai_min_lpa, 'end', -6], [v.biai_max_lpa, 'start', 6]]) {
+    g.append('text').attr('x', x(val) + dx).attr('y', cy('AI-enabled BI')).attr('dy', '0.35em').attr('text-anchor', anchor).attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(L(val));
+  }
+  if (v.posting_min_lpa != null) {
+    g.append('line').attr('x1', x(v.posting_min_lpa)).attr('x2', x(v.posting_max_lpa)).attr('y1', cy('AI-enabled BI ads')).attr('y2', cy('AI-enabled BI ads')).attr('stroke', dash.colors[2]).attr('stroke-width', 3).attr('stroke-linecap', 'round');
+    g.append('text').attr('x', x(v.posting_max_lpa) + 6).attr('y', cy('AI-enabled BI ads')).attr('dy', '0.35em').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text(`${L(v.posting_min_lpa)}–${L(v.posting_max_lpa)}`);
+  } else {
+    g.append('text').attr('x', m.l + 4).attr('y', cy('AI-enabled BI ads')).attr('dy', '0.35em').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('No postings with pay shown for this location');
+  }
+  const tip = makeTip(el);
+  const info = {
+    'Core Power BI': [[null, `Typical ${L(v.core_bi_typical_lpa)} at 5y 7m, as reported (Power BI Developer, BI Developer)`]],
+    'Core Power BI ads': v.core_ad_min_lpa != null ? [[dash.colors[4], `Advertised median ${L(v.core_ad_median_lpa)}, range ${L(v.core_ad_min_lpa)}–${L(v.core_ad_max_lpa)} across ${r.core_ad_postings} posting(s)`]] : [[null, 'No plain Power BI postings with pay shown here']],
+    'AI-enabled BI': [[dash.colors[0], `Minimum ${L(v.biai_min_lpa)}: ${r.min_from_role}`], [dash.colors[0], `Maximum ${L(v.biai_max_lpa)}: ${r.max_from_role}`], ['var(--color-fg)', `Typical ${L(v.biai_typical_lpa)} (+${r.ai_premium_pct}% vs core)`]],
+    'AI-enabled BI ads': v.posting_min_lpa != null ? [[dash.colors[2], `${L(v.posting_min_lpa)}–${L(v.posting_max_lpa)} across ${r.postings} posting(s)`]] : [[null, 'No disclosed-pay postings here']],
+  };
+  svg.append('g').selectAll('rect').data(tracks).join('rect').attr('x', 0).attr('width', W).attr('y', (t) => y(t.label) - (y.step() - y.bandwidth()) / 2).attr('height', y.step()).attr('fill', 'transparent')
+    .on('pointermove', (ev, t) => { tipLines(tip, `${window.bxCity} · ${t.label}`, info[t.label]); tip.hidden = false; const [px, py] = d3.pointer(ev, el); placeTip(el, tip, px, py); })
+    .on('pointerleave', () => { tip.hidden = true; });
+});
+
+dash.draw('troles', (tb) => {
+  tb.replaceChildren();
+  const d = dash.data('troles');
+  if (d.status !== 'ok') return;
+  const cs = members(window.bxCity);
+  const rows = d.data.filter((r) => cs.includes(r.city) && GROUPS.includes(r.group))
+    .sort((a, b) => (b.counts_for_range === 'yes') - (a.counts_for_range === 'yes') || GROUPS.indexOf(a.group) - GROUPS.indexOf(b.group) || num(b.mid_lpa) - num(a.mid_lpa));
+  for (const r of rows) {
+    const tr = document.createElement('tr');
+    tr.dataset.key = encodeURIComponent(r.city) + ',' + encodeURIComponent(r.role);
+    tr.className = 'hit' + (r.counts_for_range === 'yes' ? '' : ' dim');
+    for (const c of ['city', 'role', 'group', 'low_lpa', 'mid_lpa', 'high_lpa', 'salaries_3_6', 'counts_for_range', 'method']) {
+      const td = document.createElement('td');
+      td.textContent = r[c] ?? '';
+      if (['city', 'role', 'group', 'method'].includes(c)) td.className = 'l';
+      if (c === 'counts_for_range') td.className = 'pill' + (r[c] === 'yes' ? ' yes' : '');
+      tr.append(td);
+    }
+    tr.addEventListener('click', () => { if (window.bxCity !== r.city) select(r.city); });
+    tb.append(tr);
+  }
+});
+
+dash.draw('tposts', (tb) => {
+  tb.replaceChildren();
+  const d = dash.data('tposts');
+  if (d.status !== 'ok') return;
+  const cs = members(window.bxCity).concat(window.bxCity === 'Gurugram' || window.bxCity === 'Delhi NCR' || window.bxCity === 'All prime cities' ? ['Delhi NCR'] : []);
+  const rows = d.data.filter((r) => window.bxCity === 'All prime cities' || cs.includes(r.city)).sort((a, b) => num(b.salary_max_lpa) - num(a.salary_max_lpa));
+  for (const r of rows) {
+    const tr = document.createElement('tr');
+    tr.dataset.key = encodeURIComponent(r.city) + ',' + encodeURIComponent(r.company);
+    for (const c of ['city', 'title', 'company', 'experience', 'salary_min_lpa', 'salary_max_lpa', 'ai_skills']) {
+      const td = document.createElement('td');
+      td.textContent = r[c] ?? '';
+      if (['city', 'title', 'company', 'ai_skills'].includes(c)) td.className = 'l';
+      if (c === 'ai_skills') td.classList.add('wrap');
+      tr.append(td);
+    }
+    tb.append(tr);
+  }
+});
+
+const cmpOrder = (rows) => {
+  const pooled = rows.filter((r) => r.city === 'All prime cities' || r.city === 'Delhi NCR').sort((a) => a.city === 'All prime cities' ? -1 : 1);
+  const cities = rows.filter((r) => CITIES.includes(r.city)).sort((a, b) => num(b.biai_typical_lpa) - num(a.biai_typical_lpa));
+  return pooled.concat(cities);
+};
+
+dash.draw('cmp', (el) => {
+  el.replaceChildren();
+  const d = dash.data('tsum');
+  if (d.status !== 'ok') return;
+  const rows = cmpOrder(d.data);
+  const W = Math.max(300, el.clientWidth), rowH = 32;
+  const svg = d3.select(el).append('svg').attr('width', '100%');
+  const lw = d3.max(rows, (r) => textW(svg, r.city)) + 12;
+  const m = {t: 6, r: 52, b: 28, l: lw};
+  const H = m.t + m.b + rows.length * rowH;
+  svg.attr('viewBox', `0 0 ${W} ${H}`);
+  const x = d3.scaleLinear([0, d3.max(rows, (r) => num(r.biai_max_lpa)) * 1.05], [m.l, W - m.r]).nice();
+  const y = d3.scaleBand(rows.map((r) => r.city), [m.t, H - m.b]).padding(0.34);
+  svg.append('g').selectAll('rect').data(rows.filter((r) => r.city === window.bxCity)).join('rect')
+    .attr('x', 0).attr('width', W).attr('y', (r) => y(r.city) - (y.step() - y.bandwidth()) / 2).attr('height', y.step()).attr('fill', 'color-mix(in srgb, var(--color-fg) 7%, transparent)');
+  svg.append('g').selectAll('line').data(x.ticks(5)).join('line').attr('x1', x).attr('x2', x).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(5).tickFormat((t) => '₹' + t + 'L').tickSizeOuter(0)).call(styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).tickSize(0).tickPadding(8)).call(styleAxis).call((g) => g.select('.domain').remove())
+    .call((g) => g.selectAll('text').style('font-weight', (c) => c === window.bxCity ? 600 : null).attr('fill', (c) => c === window.bxCity ? 'var(--color-fg)' : 'var(--color-fg-muted)'));
+  const cy = (r) => y(r.city) + y.bandwidth() / 2;
+  const growC = firstDraw('cmp');
+  const bars = svg.append('g');
+  for (const r of rows) bar3d(bars, x(num(r.biai_min_lpa)), y(r.city), Math.max(3, x(num(r.biai_max_lpa)) - x(num(r.biai_min_lpa))), y.bandwidth(), dash.colors[0], {d: 6, opacity: r.city === window.bxCity ? 1 : 0.55, grow: growC});
+  svg.append('g').selectAll('line').data(rows.filter((r) => r.core_bi_typical_lpa !== '')).join('line').attr('x1', (r) => x(num(r.core_bi_typical_lpa))).attr('x2', (r) => x(num(r.core_bi_typical_lpa)))
+    .attr('y1', (r) => y(r.city) - 3).attr('y2', (r) => y(r.city) + y.bandwidth() + 3).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-width', 2.5);
+  svg.append('g').selectAll('circle').data(rows).join('circle').attr('cx', (r) => x(num(r.biai_typical_lpa))).attr('cy', cy).attr('r', 5).attr('fill', 'var(--color-fg)').attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5);
+  svg.append('g').selectAll('text').data(rows).join('text').attr('x', (r) => x(num(r.biai_max_lpa)) + 6).attr('y', cy).attr('dy', '0.35em')
+    .attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text((r) => (+r.biai_max_lpa).toFixed(1));
+  const tip = makeTip(el);
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', 0).attr('width', W).attr('y', (r) => y(r.city) - (y.step() - y.bandwidth()) / 2).attr('height', y.step()).attr('fill', 'transparent').style('cursor', 'pointer')
+    .on('pointermove', (ev, r) => {
+      tipLines(tip, `${r.city} · 5y 7m`, [[dash.colors[0], `Min ${L(r.biai_min_lpa)} · Max ${L(r.biai_max_lpa)}`], ['var(--color-fg)', `Typical ${L(r.biai_typical_lpa)} (+${r.ai_premium_pct}%)`], ['var(--cds-chart-reference)', `Core Power BI ${L(r.core_bi_typical_lpa)}`]]);
+      tip.hidden = false; const [px, py] = d3.pointer(ev, el); placeTip(el, tip, px, py);
+    })
+    .on('pointerleave', () => { tip.hidden = true; })
+    .on('click', (ev, r) => { select(r.city); for (const t of document.querySelectorAll('#target')) t.scrollIntoView({behavior: 'smooth', block: 'start'}); });
+});
+
+dash.draw('prem', (el) => {
+  el.replaceChildren();
+  const d = dash.data('tsum');
+  if (d.status !== 'ok') return;
+  const rows = cmpOrder(d.data).filter((r) => r.ai_premium_pct !== '');
+  const W = Math.max(300, el.clientWidth), rowH = 32;
+  const svg = d3.select(el).append('svg').attr('width', '100%');
+  const lw = d3.max(rows, (r) => textW(svg, r.city)) + 12;
+  const m = {t: 6, r: 48, b: 28, l: lw};
+  const H = m.t + m.b + rows.length * rowH;
+  svg.attr('viewBox', `0 0 ${W} ${H}`);
+  const x = d3.scaleLinear([0, d3.max(rows, (r) => num(r.ai_premium_pct)) * 1.1], [m.l, W - m.r]).nice();
+  const y = d3.scaleBand(rows.map((r) => r.city), [m.t, H - m.b]).padding(0.3);
+  svg.append('g').selectAll('line').data(x.ticks(5)).join('line').attr('x1', x).attr('x2', x).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(5).tickFormat((t) => t + '%').tickSizeOuter(0)).call(styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).tickSize(0).tickPadding(8)).call(styleAxis).call((g) => g.select('.domain').remove());
+  const growP = firstDraw('prem');
+  const pbars = svg.append('g');
+  for (const r of rows) bar3d(pbars, m.l, y(r.city), Math.max(2, x(num(r.ai_premium_pct)) - m.l), y.bandwidth(), r.city === window.bxCity ? dash.colors[0] : 'var(--cds-chart-muted)', {d: 6, grow: growP});
+  svg.append('g').selectAll('text').data(rows).join('text').attr('x', (r) => x(num(r.ai_premium_pct)) + 6).attr('y', (r) => y(r.city) + y.bandwidth() / 2).attr('dy', '0.35em')
+    .attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text((r) => '+' + r.ai_premium_pct + '%');
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', 0).attr('width', W).attr('y', (r) => y(r.city) - (y.step() - y.bandwidth()) / 2).attr('height', y.step()).attr('fill', 'transparent').style('cursor', 'pointer')
+    .on('click', (ev, r) => select(r.city));
+});
+
+dash.draw('curve', (el) => {
+  el.replaceChildren();
+  const d = dash.data('mcurve');
+  if (d.status !== 'ok') return;
+  const center = {'1-3': 2, '3-6': 4.5, '6-9': 7.5, '9-12': 10.5};
+  const rows = d.data.filter((r) => r.city === window.bxCity && GROUPS.includes(r.group)).map((r) => ({...r, x: center[r.exp_band]}));
+  if (!rows.length) return;
+  const W = Math.max(300, el.clientWidth), H = 320;
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+  const lw = textW(svg, 'AI-enabled BI ₹99.9L') + 12;
+  const m = {t: 14, r: lw, b: 34, l: 42};
+  const x = d3.scaleLinear([1, 12], [m.l, W - m.r]);
+  const y = d3.scaleLinear([0, d3.max(rows, (r) => r.mid) * 1.1], [H - m.b, m.t]).nice();
+  svg.append('g').selectAll('line').data(y.ticks(5)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickValues([2, 4.5, 7.5, 10.5]).tickFormat((t) => ({2: '1–3 yrs', 4.5: '3–6 yrs', 7.5: '6–9 yrs', 10.5: '9–12 yrs'})[t]).tickSizeOuter(0)).call(styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat((t) => '₹' + t + 'L').tickSize(0).tickPadding(6)).call(styleAxis).call((g) => g.select('.domain').remove());
+  svg.append('line').attr('x1', x(TARGET_YEARS)).attr('x2', x(TARGET_YEARS)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 4');
+  svg.append('text').attr('x', x(TARGET_YEARS) + 4).attr('y', m.t + 10).attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('5y 7m');
+  const line = d3.line().x((r) => x(r.x)).y((r) => y(r.mid));
+  const short = {'Core BI': 'Core BI', 'BI + AI/Fabric': 'AI-enabled BI'};
+  const ends = [];
+  for (const g of GROUPS) {
+    const pts = rows.filter((r) => r.group === g).sort((a, b) => a.x - b.x);
+    if (!pts.length) continue;
+    svg.append('path').datum(pts).attr('d', line).attr('fill', 'none').attr('stroke', groupColor(g)).attr('stroke-width', g === 'BI + AI/Fabric' ? 3 : 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', (r) => x(r.x)).attr('cy', (r) => y(r.mid)).attr('r', 3.5).attr('fill', groupColor(g));
+    const last = pts[pts.length - 1];
+    ends.push({g, x: x(last.x), y: y(last.mid), v: last.mid});
+  }
+  ends.sort((a, b) => a.y - b.y);
+  for (let i = 1; i < ends.length; i++) if (Math.abs(ends[i].x - ends[i - 1].x) < 40 && ends[i].y - ends[i - 1].y < 14) ends[i].y = ends[i - 1].y + 14;
+  svg.append('g').selectAll('text').data(ends).join('text').attr('x', (e) => e.x + 8).attr('y', (e) => e.y).attr('dy', '0.35em')
+    .attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text((e) => `${short[e.g]} ₹${e.v.toFixed(1)}L`);
+  const tip = makeTip(el);
+  const bands = ['1-3', '3-6', '6-9', '9-12'];
+  svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', W - m.l - m.r).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+    .on('pointermove', (ev) => {
+      const [px] = d3.pointer(ev);
+      const xv = x.invert(px);
+      const b = bands.reduce((best, k) => Math.abs(center[k] - xv) < Math.abs(center[best] - xv) ? k : best, '1-3');
+      const at = rows.filter((r) => r.exp_band === b).sort((p, q) => q.mid - p.mid);
+      tipLines(tip, `${window.bxCity} · ${b} yrs`, at.map((r) => [groupColor(r.group), `${short[r.group]} ₹${r.mid.toFixed(1)} L (${d3.format(',')(r.salaries)} salaries)`]));
+      tip.hidden = false; const [qx, qy] = d3.pointer(ev, el); placeTip(el, tip, qx, qy);
+    })
+    .on('pointerleave', () => { tip.hidden = true; });
+});
+
+dash.draw('heat', (el) => {
+  el.replaceChildren();
+  const d = dash.data('market');
+  if (d.status !== 'ok') return;
+  const bandEl = document.querySelector('#bx-band');
+  const band = bandEl ? bandEl.value : '3-6';
+  const shown = d.data.filter((r) => GROUPS.includes(r.group));
+  const rows = shown.filter((r) => r.exp_band === band);
+  const roles = [...new Set(shown.map((r) => r.role))].sort((a, b) => {
+    const ga = d.data.find((r) => r.role === a).group, gb = d.data.find((r) => r.role === b).group;
+    return GROUPS.indexOf(ga) - GROUPS.indexOf(gb) || a.localeCompare(b);
+  });
+  const max = d3.max(rows, (r) => num(r.mid_lpa)) || 1;
+  const table = document.createElement('table');
+  table.className = 'bx-t';
+  const head = document.createElement('tr');
+  for (const h of ['Role'].concat(CITIES)) { const th = document.createElement('th'); th.textContent = h; if (h === 'Role') th.className = 'l'; head.append(th); }
+  const thead = document.createElement('thead'); thead.append(head); table.append(thead);
+  const tbody = document.createElement('tbody');
+  for (const role of roles) {
+    const tr = document.createElement('tr');
+    const th = document.createElement('td'); th.className = 'l'; th.textContent = role; tr.append(th);
+    for (const c of CITIES) {
+      const td = document.createElement('td');
+      const r = rows.find((x) => x.role === role && x.city === c);
+      if (r) {
+        const v = num(r.mid_lpa);
+        td.textContent = v.toFixed(1);
+        td.style.background = `color-mix(in srgb, ${r.group === 'AI ceiling' ? 'var(--cds-chart-muted)' : dash.colors[0]} ${Math.round(5 + 55 * v / max)}%, transparent)`;
+        td.classList.add('hit');
+        if (r.data_type === 'estimate' || (num(r.salaries) ?? 0) < 10) td.classList.add('bx-low');
+        td.addEventListener('click', () => { select(c); for (const t of document.querySelectorAll('#target')) t.scrollIntoView({behavior: 'smooth', block: 'start'}); });
+      }
+      tr.append(td);
+    }
+    tbody.append(tr);
+  }
+  table.append(tbody);
+  el.append(table);
+});
+for (const s of document.querySelectorAll('#bx-band')) s.addEventListener('change', () => dash.draw('heat'));
+
+const PCOLS = ['title', 'company', 'exp_min', 'exp_max', 'salary_min_lpa', 'salary_max_lpa', 'locations', 'ai_skills'];
+const PNUM = new Set(['exp_min', 'exp_max', 'salary_min_lpa', 'salary_max_lpa']);
+window.bxSort = {k: 'salary_max_lpa', dir: -1};
+dash.draw('postings', (tb) => {
+  tb.replaceChildren();
+  const d = dash.data('postings');
+  if (d.status !== 'ok') return;
+  const qEl = document.querySelector('#bx-q');
+  const q = (qEl ? qEl.value : '').trim().toLowerCase();
+  const {k, dir} = window.bxSort;
+  const val = (r) => PNUM.has(k) ? (num(r[k]) ?? -1) : String(r[k] ?? '');
+  const rows = d.data.filter((r) => !q || PCOLS.some((c) => String(r[c] ?? '').toLowerCase().includes(q)))
+    .slice().sort((a, b) => { const A = val(a), B = val(b); return (A > B ? 1 : A < B ? -1 : 0) * dir; });
+  for (const r of rows) {
+    const tr = document.createElement('tr');
+    tr.dataset.key = encodeURIComponent(r.title) + ',' + encodeURIComponent(r.company);
+    for (const c of PCOLS) {
+      const td = document.createElement('td');
+      td.textContent = r[c] ?? '';
+      if (!PNUM.has(c)) td.className = 'l';
+      if (c === 'ai_skills' || c === 'locations') td.classList.add('wrap');
+      tr.append(td);
+    }
+    tb.append(tr);
+  }
+});
+for (const q of document.querySelectorAll('#bx-q')) q.addEventListener('input', () => dash.draw('postings'));
+for (const b of document.querySelectorAll('.bx-sort')) {
+  b.addEventListener('click', () => {
+    const k = b.dataset.k;
+    window.bxSort = {k, dir: window.bxSort.k === k ? -window.bxSort.dir : (PNUM.has(k) ? -1 : 1)};
+    for (const o of document.querySelectorAll('.bx-sort')) o.parentElement.removeAttribute('aria-sort');
+    b.parentElement.setAttribute('aria-sort', window.bxSort.dir > 0 ? 'ascending' : 'descending');
+    dash.draw('postings');
+  });
+}
+</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+city,title,company,experience,salary_min_lpa,salary_max_lpa,ai_skills,all_locations,as_of
+Bengaluru,Microsoft Fabric Data Engineer,Multinational Company,5-8 yrs,10.0,20.0,Fabric; Power BI; semantic models,Bengaluru,2026-11-02
+Bengaluru,MS Fabric / Power BI Data Engineer,Hitkari,5-7 yrs,8.0,12.0,Fabric; Power BI; semantic models,"Bengaluru, Hyderabad, Chennai",2026-11-02
+Hyderabad,MS Fabric / Power BI Data Engineer,Hitkari,5-7 yrs,8.0,12.0,Fabric; Power BI; semantic models,"Bengaluru, Hyderabad, Chennai",2026-11-02
+Pune,Business Intelligence Analyst,Medline Industries India,3-6 yrs,4.5,8.5,Fabric; Power BI; Tableau,Pune,2026-11-02
+Hyderabad,Sr. BI Developer,Conversehr Business Solutions,5-8 yrs,12.0,20.0,Fabric; Power BI; Snowflake,Hyderabad,2026-11-02
+Hyderabad,Data Platform Specialist,Nxtwave (client),4-9 yrs,15.0,25.0,GenAI; Azure; Power BI,Hyderabad,2026-11-02
+Bengaluru,Senior Data Consultant,Straive,5-8 yrs,15.0,30.0,Copilot/GenAI (JD match); predictive analytics,Bengaluru,2026-11-02
+Hyderabad,Business Data Analyst,Pearce Services Global,5-10 yrs,6.0,10.0,Copilot (JD match); BI tools,"Hyderabad, Gurugram",2026-11-02
+Gurugram,Business Data Analyst,Pearce Services Global,5-10 yrs,6.0,10.0,Copilot (JD match); BI tools,"Hyderabad, Gurugram",2026-11-02
+Pune,Senior Data Scientist,Worldpay,5-10 yrs,15.0,25.0,GenAI (JD match); ML; BI,Pune,2026-11-02

@@ -1,0 +1,94 @@
+source,data_type,role,locations,exp_min,exp_max,salary_min_lpa,salary_max_lpa,sample_size,company,as_of,url,note
+AmbitionBox,self_reported,Power BI Developer,India,1,3,4.7,5.1,5400,,2026-11-02,https://www.ambitionbox.com/profile/power-bi-developer-salary,
+AmbitionBox,self_reported,Power BI Developer,India,3,6,6.7,7.4,27900,,2026-11-02,https://www.ambitionbox.com/profile/power-bi-developer-salary,
+AmbitionBox,self_reported,Power BI Developer,India,6,9,9.3,10.3,488,,2026-11-02,https://www.ambitionbox.com/profile/power-bi-developer-salary,
+AmbitionBox,self_reported,Power BI Developer,Bengaluru,1,3,4.8,5.4,1300,,2026-11-01,https://www.ambitionbox.com/profile/power-bi-developer-salary/bengaluru-location,
+AmbitionBox,self_reported,Power BI Developer,Bengaluru,3,6,6.7,7.5,9600,,2026-11-01,https://www.ambitionbox.com/profile/power-bi-developer-salary/bengaluru-location,
+AmbitionBox,self_reported,Power BI Developer,Bengaluru,6,9,9.4,10.4,156,,2026-11-01,https://www.ambitionbox.com/profile/power-bi-developer-salary/bengaluru-location,
+AmbitionBox,self_reported,Power BI Developer,Gurugram,1,3,5.3,6.5,117,,2026-10-22,https://www.ambitionbox.com/profile/power-bi-developer-salary/gurgaon-location,
+AmbitionBox,self_reported,Power BI Developer,Gurugram,3,6,7.3,8.2,283,,2026-10-22,https://www.ambitionbox.com/profile/power-bi-developer-salary/gurgaon-location,
+AmbitionBox,self_reported,Power BI Developer,Gurugram,6,9,8.3,11.8,3,,2026-10-22,https://www.ambitionbox.com/profile/power-bi-developer-salary/gurgaon-location,very small sample
+AmbitionBox,self_reported,Power BI Developer,Pune,1,3,4.7,5.2,1300,,2026-11-01,https://www.ambitionbox.com/profile/power-bi-developer-salary/pune-location,
+AmbitionBox,self_reported,Power BI Developer,Pune,3,6,6.6,7.3,3100,,2026-11-01,https://www.ambitionbox.com/profile/power-bi-developer-salary/pune-location,
+AmbitionBox,self_reported,Power BI Developer,Pune,6,9,8.2,10.6,37,,2026-11-01,https://www.ambitionbox.com/profile/power-bi-developer-salary/pune-location,
+AmbitionBox,self_reported,Power BI Developer,Mumbai,1,3,4.6,5.1,284,,2026-10-30,https://www.ambitionbox.com/profile/power-bi-developer-salary/mumbai-location,
+AmbitionBox,self_reported,Power BI Developer,Mumbai,3,6,6.4,7.1,654,,2026-10-30,https://www.ambitionbox.com/profile/power-bi-developer-salary/mumbai-location,
+AmbitionBox,self_reported,Power BI Developer,Mumbai,6,9,7.6,10.5,5,,2026-10-30,https://www.ambitionbox.com/profile/power-bi-developer-salary/mumbai-location,very small sample
+AmbitionBox,self_reported,Power BI Developer,New Delhi,1,3,5.2,5.8,111,,2026-10-30,https://www.ambitionbox.com/profile/power-bi-developer-salary/new-delhi-location,
+AmbitionBox,self_reported,Power BI Developer,New Delhi,3,6,7.2,7.9,247,,2026-10-30,https://www.ambitionbox.com/profile/power-bi-developer-salary/new-delhi-location,
+AmbitionBox,estimate,Power BI Developer,New Delhi,6,9,8.2,11.6,,,2026-10-30,https://www.ambitionbox.com/profile/power-bi-developer-salary/new-delhi-location,AmbitionBox estimate (no reported sample)
+AmbitionBox,self_reported,Power BI Developer,Noida,1,3,4.5,5.2,123,,2026-10-30,https://www.ambitionbox.com/profile/power-bi-developer-salary/noida-location,
+AmbitionBox,self_reported,Power BI Developer,Noida,3,6,6.2,6.9,332,,2026-10-30,https://www.ambitionbox.com/profile/power-bi-developer-salary/noida-location,
+AmbitionBox,self_reported,Power BI Developer,Noida,6,9,7.7,10.2,4,,2026-10-30,https://www.ambitionbox.com/profile/power-bi-developer-salary/noida-location,very small sample
+AmbitionBox,self_reported,Power BI Developer,Hyderabad,1,3,4.9,5.4,1100,,2026-10-31,https://www.ambitionbox.com/profile/power-bi-developer-salary/hyderabad-location,reference city
+AmbitionBox,self_reported,Power BI Developer,Hyderabad,3,6,6.6,7.3,8400,,2026-10-31,https://www.ambitionbox.com/profile/power-bi-developer-salary/hyderabad-location,reference city
+AmbitionBox,self_reported,Power BI Developer,Hyderabad,6,9,9.4,10.4,136,,2026-10-31,https://www.ambitionbox.com/profile/power-bi-developer-salary/hyderabad-location,reference city
+AmbitionBox,self_reported,Power BI Developer,Chennai,1,3,4.9,5.4,256,,2026-11-01,https://www.ambitionbox.com/profile/power-bi-developer-salary/chennai-location,reference city
+AmbitionBox,self_reported,Power BI Developer,Chennai,3,6,6.8,7.5,2200,,2026-11-01,https://www.ambitionbox.com/profile/power-bi-developer-salary/chennai-location,reference city
+AmbitionBox,self_reported,Power BI Developer,Chennai,6,9,8.7,9.8,75,,2026-11-01,https://www.ambitionbox.com/profile/power-bi-developer-salary/chennai-location,reference city
+AmbitionBox,self_reported,Senior Power BI Developer,India,3,6,10.2,11.2,694,,2026-10-31,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary,
+AmbitionBox,self_reported,Senior Power BI Developer,India,6,9,14.4,15.9,825,,2026-10-31,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary,
+AmbitionBox,self_reported,Senior Power BI Developer,India,9,12,17.3,19.1,224,,2026-10-31,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary,
+AmbitionBox,self_reported,Senior Power BI Developer,Bengaluru,3,6,10.0,11.1,138,,2026-10-31,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/bengaluru-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Bengaluru,6,9,13.7,15.1,225,,2026-10-31,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/bengaluru-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Bengaluru,9,12,16.1,19.6,54,,2026-10-31,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/bengaluru-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Gurugram,3,6,8.4,12.1,31,,2026-10-29,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/gurgaon-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Gurugram,6,9,11.0,15.4,39,,2026-10-29,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/gurgaon-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Gurugram,9,12,12.4,18.3,7,,2026-10-29,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/gurgaon-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Pune,3,6,9.7,12.1,92,,2026-10-30,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/pune-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Pune,6,9,12.1,15.3,72,,2026-10-30,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/pune-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Pune,9,12,13.2,19.3,12,,2026-10-30,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/pune-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Mumbai,3,6,7.4,11.0,19,,2026-10-29,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/mumbai-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Mumbai,6,9,9.7,13.5,22,,2026-10-29,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/mumbai-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Mumbai,9,12,12.8,18.8,10,,2026-10-29,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/mumbai-location,
+AmbitionBox,self_reported,Senior Power BI Developer,New Delhi,3,6,9.1,11.8,29,,2026-10-31,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/new-delhi-location,
+AmbitionBox,self_reported,Senior Power BI Developer,New Delhi,6,9,10.0,14.7,19,,2026-10-31,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/new-delhi-location,
+AmbitionBox,self_reported,Senior Power BI Developer,New Delhi,9,12,13.7,19.7,14,,2026-10-31,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/new-delhi-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Noida,3,6,8.2,11.0,23,,2026-10-29,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/noida-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Noida,6,9,10.7,14.5,36,,2026-10-29,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/noida-location,
+AmbitionBox,self_reported,Senior Power BI Developer,Noida,9,12,11.8,16.6,21,,2026-10-29,https://www.ambitionbox.com/profile/senior-power-bi-developer-salary/noida-location,
+AmbitionBox,estimate,Power BI Lead,India,3,6,8.9,9.9,,,2026-10-25,https://www.ambitionbox.com/profile/power-bi-lead-salary,AmbitionBox estimate
+AmbitionBox,self_reported,Power BI Lead,India,6,9,17.2,19.0,10,,2026-10-25,https://www.ambitionbox.com/profile/power-bi-lead-salary,
+AmbitionBox,self_reported,Power BI Lead,India,9,12,22.8,25.2,17,,2026-10-25,https://www.ambitionbox.com/profile/power-bi-lead-salary,
+AmbitionBox,self_reported,Power BI Lead,India,12,15,23.6,26.1,16,,2026-10-25,https://www.ambitionbox.com/profile/power-bi-lead-salary,12+ years
+AmbitionBox,estimate,Power BI Lead,Bengaluru,9,12,15.2,16.8,,,2026-10-09,https://www.ambitionbox.com/profile/power-bi-lead-salary/bengaluru-location,AmbitionBox estimate
+AmbitionBox,self_reported,Power BI Lead,Bengaluru,12,15,23.6,26.1,7,,2026-10-09,https://www.ambitionbox.com/profile/power-bi-lead-salary/bengaluru-location,12+ years
+AmbitionBox,estimate,Power BI Lead,New Delhi,6,9,21.9,24.2,,,2026-05-30,https://www.ambitionbox.com/profile/power-bi-lead-salary/new-delhi-location,AmbitionBox estimate
+AmbitionBox,estimate,Power BI Lead,New Delhi,12,15,29.7,32.8,,,2026-05-30,https://www.ambitionbox.com/profile/power-bi-lead-salary/new-delhi-location,AmbitionBox estimate; 12+ years
+AmbitionBox,self_reported,Power BI Architect,India,6,9,20.7,28.9,8,,2026-10-23,https://www.ambitionbox.com/profile/power-bi-architect-salary,
+AmbitionBox,self_reported,Power BI Architect,India,9,12,23.2,28.6,37,,2026-10-23,https://www.ambitionbox.com/profile/power-bi-architect-salary,
+AmbitionBox,self_reported,Power BI Architect,India,12,15,27.3,32.1,72,,2026-10-23,https://www.ambitionbox.com/profile/power-bi-architect-salary,12+ years
+Glassdoor,self_reported,Power BI Developer,Bengaluru,,,5.1,8.4,348,,2026-09-01,https://www.glassdoor.co.in/Salaries/bangalore-power-bi-developer-salary-SRCH_IL.0,9_IM1091_KO10,28.htm,25th-75th pct; avg 6.35 LPA; via search index (site bot-check blocks direct reads)
+Glassdoor,self_reported,Power BI Developer,Mumbai,,,4.9,11.0,119,,2026-10-01,https://www.glassdoor.co.in/Salaries/mumbai-power-bi-developer-salary-SRCH_IL.0,6_IM1070_KO7,25.htm,low-high; avg 6.4 LPA; via search index
+Glassdoor,self_reported,Power BI Developer,Pune,,,4.45,7.15,285,,2026-07-01,https://www.glassdoor.co.in/Salaries/pune-power-bi-developer-salary-SRCH_IL.0,4_IM1072_KO5,23.htm,avg 5.08 LPA; via search index
+Indeed,self_reported,BI Developer (related role),India,,,4.89,15.57,17,,2026-09-25,https://in.indeed.com/career/power-bi-developer/salaries,Indeed maps Power BI Developer to BI Developer; avg 8.73 LPA; tiny sample
+Hyring,model_estimate,Power BI Developer,Gurugram,0,3,5.4,8.7,,,2026-06-21,https://hyring.com/jobseeker-toolkit/salary/power-bi-developer-salary-in-gurugram,modelled 10th-25th pct (fresher); median 12.8 LPA
+Hyring,model_estimate,Power BI Developer,Gurugram,3,8,8.7,21.8,,,2026-06-21,https://hyring.com/jobseeker-toolkit/salary/power-bi-developer-salary-in-gurugram,modelled 25th-75th pct (intermediate); exp years assumed
+Hyring,model_estimate,Power BI Developer,Gurugram,8,15,21.8,33.3,,,2026-06-21,https://hyring.com/jobseeker-toolkit/salary/power-bi-developer-salary-in-gurugram,modelled 75th-90th pct (senior); exp years assumed
+Hyring,model_estimate,Power BI Developer,India,0,3,4.4,7.1,,,2026-06-01,https://hyring.com/jobseeker-toolkit/salary/power-bi-developer-salary-in-india,modelled fresher band; median 10.5 LPA
+Hyring,model_estimate,Power BI Developer,India,3,8,7.1,17.9,,,2026-06-01,https://hyring.com/jobseeker-toolkit/salary/power-bi-developer-salary-in-india,modelled intermediate band; exp years assumed
+Hyring,model_estimate,Power BI Developer,India,8,15,17.9,27.3,,,2026-06-01,https://hyring.com/jobseeker-toolkit/salary/power-bi-developer-salary-in-india,modelled senior band; exp years assumed
+Naukri,job_posting,Power BI Developer,Bengaluru|Pune|Gurugram|Noida|Delhi NCR,5,10,15,25,1,US MNC (analytics),2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-gurugram,hybrid
+Naukri,job_posting,Power BI Developer,Gurugram|Noida|Delhi NCR,5,10,15,25,1,US MNC (analytics) - 2nd req,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-delhi-ncr,incl. 10% variable
+Naukri,job_posting,Power BI Developer,Gurugram,6,10,10,20,1,NLB,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-gurugram,
+Naukri,job_posting,Power BI Lead,Gurugram|Bengaluru,8,13,15,27.5,1,EXL,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-gurugram-2,
+Naukri,job_posting,Power BI Developer,Gurugram,1,3,1,6,1,Evalueserve,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-gurugram-2,Associate - Power BI + Fabric
+Naukri,job_posting,Power BI Developer,Gurugram|Noida|Bengaluru,6,11,8.5,16,1,EY,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-gurugram-2,AM - finance reporting
+Naukri,job_posting,Power BI Developer,Bengaluru|Noida,5,8,10,20,1,Emids Technologies,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-bengaluru,
+Naukri,job_posting,Power BI Developer,Bengaluru|Mumbai,5,10,8,13,1,Lacento Technologies,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-bengaluru,
+Naukri,job_posting,Power BI Developer,Bengaluru,4,9,22.5,27.5,1,Trigent Software,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-bengaluru-2,
+Naukri,job_posting,Power BI Developer,Bengaluru|Mumbai,5,10,12,18,1,Datamatics,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-bengaluru-2,
+Naukri,job_posting,Power BI Developer,Bengaluru,6,11,12,19,1,Datamatics - 2nd req,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-bengaluru-2,
+Naukri,job_posting,Power BI Developer,Bengaluru,3,6,8,10,1,Xencia Technology Solutions,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-bengaluru-2,
+Naukri,job_posting,Power BI Developer,Remote,0,2,3,7,1,Jobaaj com,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-pune,junior; remote
+Naukri,job_posting,Power BI Developer,Pune,4,8,6,10,1,ProductDossier,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-pune,
+Naukri,job_posting,Power BI Developer,Pune|Noida,3,4,5.5,7.5,1,Mindpool Technologies,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-pune,
+Naukri,job_posting,Power BI Developer,Pune,5,7,2,6,1,Honeybee Tech Solutions,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-pune,outlier: low for experience
+Naukri,job_posting,Power BI Developer,Mumbai,3,6,8,12,1,SRV Headhunt,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-mumbai,PL-300 mandatory
+Naukri,job_posting,Power BI Lead,Mumbai,6,11,15,25,1,Saint Gobain,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-mumbai,Developer/Lead
+Naukri,job_posting,Power BI Developer,Mumbai,3,6,5,10,1,iit jobs,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-mumbai,
+Naukri,job_posting,Power BI Developer,Mumbai,2,4,2,7,1,kanak elite services,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-mumbai,Fabric developer
+Naukri,job_posting,Power BI Developer,Mumbai,5,10,5,10,1,Bahwan CyberTek,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-mumbai,
+Naukri,job_posting,Power BI Developer,Mumbai,7,12,16,30,1,Product-based company,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-mumbai,
+Naukri,job_posting,Power BI Developer,New Delhi,3,7,5,8,1,McCoy,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-delhi-ncr,
+Naukri,job_posting,Power BI Developer,Noida,1,2,3.75,6,1,SM Informatics Controls,2026-11-02,https://www.naukri.com/power-bi-developer-jobs-in-noida,

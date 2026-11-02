@@ -1,0 +1,188 @@
+role,group,city,exp_band,low_lpa,high_lpa,mid_lpa,salaries,data_type,as_of
+Power BI Developer,Core BI,Gurugram,1-3,5.3,6.5,5.9,117,self_reported,2026-10-22
+Power BI Developer,Core BI,Gurugram,3-6,7.3,8.2,7.75,283,self_reported,2026-10-22
+Power BI Developer,Core BI,Gurugram,6-9,8.3,11.8,10.05,3,self_reported,2026-10-22
+Power BI Developer,Core BI,New Delhi,1-3,5.2,5.8,5.5,111,self_reported,2026-10-30
+Power BI Developer,Core BI,New Delhi,3-6,7.2,7.9,7.55,247,self_reported,2026-10-30
+Power BI Developer,Core BI,New Delhi,6-9,8.2,11.6,9.9,0,estimate,2026-10-30
+Power BI Developer,Core BI,Noida,1-3,4.5,5.2,4.85,123,self_reported,2026-10-30
+Power BI Developer,Core BI,Noida,3-6,6.2,6.9,6.55,332,self_reported,2026-10-30
+Power BI Developer,Core BI,Noida,6-9,7.7,10.2,8.95,4,self_reported,2026-10-30
+Power BI Developer,Core BI,Bengaluru,1-3,4.8,5.4,5.1,1300,self_reported,2026-11-01
+Power BI Developer,Core BI,Bengaluru,3-6,6.7,7.5,7.1,9600,self_reported,2026-11-01
+Power BI Developer,Core BI,Bengaluru,6-9,9.4,10.4,9.9,156,self_reported,2026-11-01
+Power BI Developer,Core BI,Pune,1-3,4.7,5.2,4.95,1300,self_reported,2026-11-01
+Power BI Developer,Core BI,Pune,3-6,6.6,7.3,6.95,3100,self_reported,2026-11-01
+Power BI Developer,Core BI,Pune,6-9,8.2,10.6,9.4,37,self_reported,2026-11-01
+Power BI Developer,Core BI,Mumbai,1-3,4.6,5.1,4.85,284,self_reported,2026-10-30
+Power BI Developer,Core BI,Mumbai,3-6,6.4,7.1,6.75,654,self_reported,2026-10-30
+Power BI Developer,Core BI,Mumbai,6-9,7.6,10.5,9.05,5,self_reported,2026-10-30
+Power BI Developer,Core BI,Hyderabad,1-3,4.9,5.4,5.15,1100,self_reported,2026-10-31
+Power BI Developer,Core BI,Hyderabad,3-6,6.6,7.3,6.95,8400,self_reported,2026-10-31
+Power BI Developer,Core BI,Hyderabad,6-9,9.4,10.4,9.9,136,self_reported,2026-10-31
+BI Developer,Core BI,Gurugram,1-3,5.2,6.4,5.8,24,self_reported,2026-10-27
+BI Developer,Core BI,Gurugram,3-6,6.5,8.0,7.25,83,self_reported,2026-10-27
+BI Developer,Core BI,Gurugram,6-9,9.5,13.1,11.3,14,self_reported,2026-10-27
+BI Developer,Core BI,New Delhi,1-3,4.6,6.1,5.35,40,self_reported,2026-10-29
+BI Developer,Core BI,New Delhi,3-6,6.1,7.5,6.8,87,self_reported,2026-10-29
+BI Developer,Core BI,New Delhi,6-9,8.0,11.9,9.95,3,self_reported,2026-10-29
+BI Developer,Core BI,Noida,1-3,4.3,5.6,4.95,31,self_reported,2026-10-21
+BI Developer,Core BI,Noida,3-6,6.1,7.2,6.65,76,self_reported,2026-10-21
+BI Developer,Core BI,Noida,6-9,7.8,11.5,9.65,7,self_reported,2026-10-21
+BI Developer,Core BI,Bengaluru,1-3,4.7,5.2,4.95,174,self_reported,2026-10-28
+BI Developer,Core BI,Bengaluru,3-6,6.8,7.5,7.15,1300,self_reported,2026-10-28
+BI Developer,Core BI,Bengaluru,6-9,10.5,12.4,11.45,103,self_reported,2026-10-28
+BI Developer,Core BI,Pune,1-3,4.7,5.5,5.1,125,self_reported,2026-10-31
+BI Developer,Core BI,Pune,3-6,6.8,7.5,7.15,381,self_reported,2026-10-31
+BI Developer,Core BI,Pune,6-9,9.8,12.6,11.2,40,self_reported,2026-10-31
+BI Developer,Core BI,Mumbai,1-3,4.3,5.4,4.85,48,self_reported,2026-10-26
+BI Developer,Core BI,Mumbai,3-6,6.4,7.5,6.95,151,self_reported,2026-10-26
+BI Developer,Core BI,Mumbai,6-9,14.3,15.9,15.1,55,self_reported,2026-10-26
+BI Developer,Core BI,Hyderabad,1-3,4.8,5.3,5.05,145,self_reported,2026-10-29
+BI Developer,Core BI,Hyderabad,3-6,6.4,7.1,6.75,1100,self_reported,2026-10-29
+BI Developer,Core BI,Hyderabad,6-9,9.6,11.7,10.65,67,self_reported,2026-10-29
+Senior Power BI Developer,BI + AI/Fabric,Gurugram,3-6,8.4,12.1,10.25,31,self_reported,2026-10-29
+Senior Power BI Developer,BI + AI/Fabric,Gurugram,6-9,11.0,15.4,13.2,39,self_reported,2026-10-29
+Senior Power BI Developer,BI + AI/Fabric,Gurugram,9-12,12.4,18.3,15.35,7,self_reported,2026-10-29
+Senior Power BI Developer,BI + AI/Fabric,New Delhi,3-6,9.1,11.8,10.45,29,self_reported,2026-10-31
+Senior Power BI Developer,BI + AI/Fabric,New Delhi,6-9,10.0,14.7,12.35,19,self_reported,2026-10-31
+Senior Power BI Developer,BI + AI/Fabric,New Delhi,9-12,13.7,19.7,16.7,14,self_reported,2026-10-31
+Senior Power BI Developer,BI + AI/Fabric,Noida,3-6,8.2,11.0,9.6,23,self_reported,2026-10-29
+Senior Power BI Developer,BI + AI/Fabric,Noida,6-9,10.7,14.5,12.6,36,self_reported,2026-10-29
+Senior Power BI Developer,BI + AI/Fabric,Noida,9-12,11.8,16.6,14.2,21,self_reported,2026-10-29
+Senior Power BI Developer,BI + AI/Fabric,Bengaluru,3-6,10.0,11.1,10.55,138,self_reported,2026-10-31
+Senior Power BI Developer,BI + AI/Fabric,Bengaluru,6-9,13.7,15.1,14.4,225,self_reported,2026-10-31
+Senior Power BI Developer,BI + AI/Fabric,Bengaluru,9-12,16.1,19.6,17.85,54,self_reported,2026-10-31
+Senior Power BI Developer,BI + AI/Fabric,Pune,3-6,9.7,12.1,10.9,92,self_reported,2026-10-30
+Senior Power BI Developer,BI + AI/Fabric,Pune,6-9,12.1,15.3,13.7,72,self_reported,2026-10-30
+Senior Power BI Developer,BI + AI/Fabric,Pune,9-12,13.2,19.3,16.25,12,self_reported,2026-10-30
+Senior Power BI Developer,BI + AI/Fabric,Mumbai,3-6,7.4,11.0,9.2,19,self_reported,2026-10-29
+Senior Power BI Developer,BI + AI/Fabric,Mumbai,6-9,9.7,13.5,11.6,22,self_reported,2026-10-29
+Senior Power BI Developer,BI + AI/Fabric,Mumbai,9-12,12.8,18.8,15.8,10,self_reported,2026-10-29
+Senior BI Developer,BI + AI/Fabric,Gurugram,3-6,8.8,12.7,10.75,19,self_reported,2026-10-18
+Senior BI Developer,BI + AI/Fabric,Gurugram,6-9,15.2,19.3,17.25,41,self_reported,2026-10-18
+Senior BI Developer,BI + AI/Fabric,Gurugram,9-12,19.5,25.9,22.7,18,self_reported,2026-10-18
+Senior BI Developer,BI + AI/Fabric,New Delhi,3-6,9.6,13.3,11.45,8,self_reported,2026-10-14
+Senior BI Developer,BI + AI/Fabric,New Delhi,6-9,13.6,20.2,16.9,19,self_reported,2026-10-14
+Senior BI Developer,BI + AI/Fabric,New Delhi,9-12,18.0,25.1,21.55,10,self_reported,2026-10-14
+Senior BI Developer,BI + AI/Fabric,Noida,3-6,8.3,11.4,9.85,13,self_reported,2026-10-22
+Senior BI Developer,BI + AI/Fabric,Noida,6-9,14.2,19.6,16.9,18,self_reported,2026-10-22
+Senior BI Developer,BI + AI/Fabric,Noida,9-12,16.9,25.3,21.1,6,self_reported,2026-10-22
+Senior BI Developer,BI + AI/Fabric,Bengaluru,3-6,9.6,11.8,10.7,90,self_reported,2026-10-29
+Senior BI Developer,BI + AI/Fabric,Bengaluru,6-9,15.0,17.0,16.0,118,self_reported,2026-10-29
+Senior BI Developer,BI + AI/Fabric,Bengaluru,9-12,19.3,23.5,21.4,59,self_reported,2026-10-29
+Senior BI Developer,BI + AI/Fabric,Pune,3-6,10.9,14.1,12.5,39,self_reported,2026-11-01
+Senior BI Developer,BI + AI/Fabric,Pune,6-9,14.7,17.7,16.2,60,self_reported,2026-11-01
+Senior BI Developer,BI + AI/Fabric,Pune,9-12,16.2,23.0,19.6,20,self_reported,2026-11-01
+Senior BI Developer,BI + AI/Fabric,Mumbai,3-6,8.8,11.8,10.3,21,self_reported,2026-10-10
+Senior BI Developer,BI + AI/Fabric,Mumbai,6-9,11.4,16.1,13.75,20,self_reported,2026-10-10
+Senior BI Developer,BI + AI/Fabric,Mumbai,9-12,14.6,20.8,17.7,13,self_reported,2026-10-10
+Senior BI Developer,BI + AI/Fabric,Hyderabad,3-6,9.4,11.1,10.25,66,self_reported,2026-10-30
+Senior BI Developer,BI + AI/Fabric,Hyderabad,6-9,13.9,16.6,15.25,83,self_reported,2026-10-30
+Senior BI Developer,BI + AI/Fabric,Hyderabad,9-12,18.9,23.5,21.2,46,self_reported,2026-10-30
+BI Engineer,BI + AI/Fabric,Gurugram,1-3,8.1,8.9,8.5,0,estimate,2026-10-14
+BI Engineer,BI + AI/Fabric,Gurugram,3-6,17.4,19.2,18.3,7,self_reported,2026-10-14
+BI Engineer,BI + AI/Fabric,Gurugram,6-9,21.9,24.2,23.05,0,estimate,2026-10-14
+BI Engineer,BI + AI/Fabric,New Delhi,1-3,7.6,8.4,8.0,0,estimate,2026-10-14
+BI Engineer,BI + AI/Fabric,New Delhi,3-6,8.4,12.1,10.25,7,self_reported,2026-10-14
+BI Engineer,BI + AI/Fabric,Noida,1-3,3.8,4.3,4.05,0,estimate,2026-05-08
+BI Engineer,BI + AI/Fabric,Noida,3-6,9.8,14.1,11.95,5,self_reported,2026-05-08
+BI Engineer,BI + AI/Fabric,Bengaluru,1-3,6.9,9.2,8.05,18,self_reported,2026-10-26
+BI Engineer,BI + AI/Fabric,Bengaluru,3-6,11.1,14.1,12.6,56,self_reported,2026-10-26
+BI Engineer,BI + AI/Fabric,Bengaluru,6-9,18.2,21.8,20.0,33,self_reported,2026-10-26
+BI Engineer,BI + AI/Fabric,Pune,1-3,5.9,8.6,7.25,5,self_reported,2026-10-25
+BI Engineer,BI + AI/Fabric,Pune,3-6,9.6,13.4,11.5,19,self_reported,2026-10-25
+BI Engineer,BI + AI/Fabric,Pune,6-9,12.3,17.7,15.0,3,self_reported,2026-10-25
+BI Engineer,BI + AI/Fabric,Hyderabad,1-3,5.8,8.3,7.05,9,self_reported,2026-10-14
+BI Engineer,BI + AI/Fabric,Hyderabad,3-6,8.0,10.3,9.15,48,self_reported,2026-10-14
+BI Engineer,BI + AI/Fabric,Hyderabad,6-9,16.1,23.0,19.55,9,self_reported,2026-10-14
+Power BI Consultant,BI + AI/Fabric,Gurugram,1-3,10.3,11.4,10.85,0,estimate,2026-11-01
+Power BI Consultant,BI + AI/Fabric,Gurugram,3-6,9.1,12.9,11.0,21,self_reported,2026-11-01
+Power BI Consultant,BI + AI/Fabric,Gurugram,6-9,10.4,15.0,12.7,6,self_reported,2026-11-01
+Power BI Consultant,BI + AI/Fabric,New Delhi,1-3,9.5,10.5,10.0,0,estimate,2026-10-16
+Power BI Consultant,BI + AI/Fabric,New Delhi,3-6,9.1,12.9,11.0,19,self_reported,2026-10-16
+Power BI Consultant,BI + AI/Fabric,New Delhi,6-9,11.5,15.3,13.4,5,self_reported,2026-10-16
+Power BI Consultant,BI + AI/Fabric,Noida,1-3,5.8,6.4,6.1,0,estimate,2026-09-26
+Power BI Consultant,BI + AI/Fabric,Noida,3-6,7.3,10.0,8.65,11,self_reported,2026-09-26
+Power BI Consultant,BI + AI/Fabric,Noida,6-9,10.7,14.7,12.7,8,self_reported,2026-09-26
+Power BI Consultant,BI + AI/Fabric,Bengaluru,1-3,5.7,8.5,7.1,19,self_reported,2026-10-31
+Power BI Consultant,BI + AI/Fabric,Bengaluru,3-6,8.2,9.1,8.65,235,self_reported,2026-10-31
+Power BI Consultant,BI + AI/Fabric,Bengaluru,6-9,11.0,12.8,11.9,79,self_reported,2026-10-31
+Power BI Consultant,BI + AI/Fabric,Pune,1-3,5.7,7.4,6.55,20,self_reported,2026-09-07
+Power BI Consultant,BI + AI/Fabric,Pune,3-6,8.3,9.9,9.1,93,self_reported,2026-09-07
+Power BI Consultant,BI + AI/Fabric,Pune,6-9,10.1,13.3,11.7,18,self_reported,2026-09-07
+Power BI Consultant,BI + AI/Fabric,Mumbai,1-3,4.8,6.6,5.7,12,self_reported,2026-10-13
+Power BI Consultant,BI + AI/Fabric,Mumbai,3-6,7.3,9.4,8.35,22,self_reported,2026-10-13
+Power BI Consultant,BI + AI/Fabric,Mumbai,6-9,8.2,12.3,10.25,5,self_reported,2026-10-13
+Power BI Consultant,BI + AI/Fabric,Hyderabad,1-3,6.3,8.1,7.2,15,self_reported,2026-10-29
+Power BI Consultant,BI + AI/Fabric,Hyderabad,3-6,8.3,9.2,8.75,164,self_reported,2026-10-29
+Power BI Consultant,BI + AI/Fabric,Hyderabad,6-9,10.4,12.9,11.65,72,self_reported,2026-10-29
+Analytics Engineer,BI + AI/Fabric,Gurugram,1-3,7.6,8.4,8.0,6,self_reported,2026-05-07
+Analytics Engineer,BI + AI/Fabric,Gurugram,3-6,8.4,9.3,8.85,18,self_reported,2026-05-07
+Analytics Engineer,BI + AI/Fabric,Gurugram,6-9,15.1,16.7,15.9,4,self_reported,2026-05-07
+Analytics Engineer,BI + AI/Fabric,New Delhi,1-3,4.8,7.1,5.95,8,self_reported,2026-10-10
+Analytics Engineer,BI + AI/Fabric,New Delhi,3-6,7.9,11.5,9.7,7,self_reported,2026-10-10
+Analytics Engineer,BI + AI/Fabric,New Delhi,6-9,11.9,17.8,14.85,6,self_reported,2026-10-10
+Analytics Engineer,BI + AI/Fabric,Bengaluru,1-3,6.2,8.0,7.1,60,self_reported,2026-10-31
+Analytics Engineer,BI + AI/Fabric,Bengaluru,3-6,8.8,11.3,10.05,102,self_reported,2026-10-31
+Analytics Engineer,BI + AI/Fabric,Bengaluru,6-9,15.5,21.5,18.5,74,self_reported,2026-10-31
+Analytics Engineer,BI + AI/Fabric,Pune,1-3,7.1,10.2,8.65,19,self_reported,2026-09-23
+Analytics Engineer,BI + AI/Fabric,Pune,3-6,8.2,11.9,10.05,40,self_reported,2026-09-23
+Analytics Engineer,BI + AI/Fabric,Pune,6-9,15.0,22.0,18.5,18,self_reported,2026-09-23
+Analytics Engineer,BI + AI/Fabric,Hyderabad,1-3,6.4,7.1,6.75,37,self_reported,2026-10-30
+Analytics Engineer,BI + AI/Fabric,Hyderabad,3-6,12.1,13.4,12.75,39,self_reported,2026-10-30
+Analytics Engineer,BI + AI/Fabric,Hyderabad,6-9,16.2,17.9,17.05,7,self_reported,2026-10-30
+Azure Data Engineer,Excluded,Gurugram,1-3,5.5,7.6,6.55,18,self_reported,2026-10-28
+Azure Data Engineer,Excluded,Gurugram,3-6,8.3,10.3,9.3,125,self_reported,2026-10-28
+Azure Data Engineer,Excluded,Gurugram,6-9,10.8,15.4,13.1,12,self_reported,2026-10-28
+Azure Data Engineer,Excluded,New Delhi,1-3,4.2,5.9,5.05,32,self_reported,2026-10-23
+Azure Data Engineer,Excluded,New Delhi,3-6,6.6,8.4,7.5,108,self_reported,2026-10-23
+Azure Data Engineer,Excluded,New Delhi,6-9,10.3,11.4,10.85,0,estimate,2026-10-23
+Azure Data Engineer,Excluded,Noida,1-3,4.5,6.1,5.3,38,self_reported,2026-10-30
+Azure Data Engineer,Excluded,Noida,3-6,7.3,8.8,8.05,188,self_reported,2026-10-30
+Azure Data Engineer,Excluded,Noida,6-9,9.6,14.0,11.8,8,self_reported,2026-10-30
+Azure Data Engineer,Excluded,Bengaluru,1-3,5.4,6.0,5.7,530,self_reported,2026-11-02
+Azure Data Engineer,Excluded,Bengaluru,3-6,8.1,9.0,8.55,4500,self_reported,2026-11-02
+Azure Data Engineer,Excluded,Bengaluru,6-9,11.9,13.3,12.6,201,self_reported,2026-11-02
+Azure Data Engineer,Excluded,Pune,1-3,5.1,5.9,5.5,303,self_reported,2026-11-01
+Azure Data Engineer,Excluded,Pune,3-6,7.9,8.7,8.3,1600,self_reported,2026-11-01
+Azure Data Engineer,Excluded,Pune,6-9,10.8,14.3,12.55,86,self_reported,2026-11-01
+Azure Data Engineer,Excluded,Mumbai,1-3,4.8,6.1,5.45,43,self_reported,2026-10-31
+Azure Data Engineer,Excluded,Mumbai,3-6,6.8,9.4,8.1,186,self_reported,2026-10-31
+Azure Data Engineer,Excluded,Mumbai,6-9,9.6,13.8,11.7,10,self_reported,2026-10-31
+Azure Data Engineer,Excluded,Hyderabad,1-3,5.2,5.7,5.45,570,self_reported,2026-11-01
+Azure Data Engineer,Excluded,Hyderabad,3-6,8.0,8.8,8.4,4800,self_reported,2026-11-01
+Azure Data Engineer,Excluded,Hyderabad,6-9,12.1,13.3,12.7,232,self_reported,2026-11-01
+Power Platform Developer,BI + AI/Fabric,Gurugram,1-3,4.5,6.5,5.5,5,self_reported,2026-08-22
+Power Platform Developer,BI + AI/Fabric,Gurugram,3-6,5.4,7.9,6.65,11,self_reported,2026-08-22
+Power Platform Developer,BI + AI/Fabric,New Delhi,1-3,4.5,6.5,5.5,8,self_reported,2026-10-14
+Power Platform Developer,BI + AI/Fabric,New Delhi,3-6,5.6,7.9,6.75,20,self_reported,2026-10-14
+Power Platform Developer,BI + AI/Fabric,New Delhi,6-9,12.3,13.6,12.95,0,estimate,2026-10-14
+Power Platform Developer,BI + AI/Fabric,Noida,3-6,5.9,8.0,6.95,17,self_reported,2026-10-30
+Power Platform Developer,BI + AI/Fabric,Bengaluru,1-3,5.2,7.0,6.1,45,self_reported,2026-11-01
+Power Platform Developer,BI + AI/Fabric,Bengaluru,3-6,7.3,8.2,7.75,224,self_reported,2026-11-01
+Power Platform Developer,BI + AI/Fabric,Bengaluru,6-9,11.9,16.8,14.35,14,self_reported,2026-11-01
+Power Platform Developer,BI + AI/Fabric,Pune,1-3,4.8,6.2,5.5,48,self_reported,2026-11-01
+Power Platform Developer,BI + AI/Fabric,Pune,3-6,6.4,7.8,7.1,99,self_reported,2026-11-01
+Power Platform Developer,BI + AI/Fabric,Pune,6-9,13.1,19.2,16.15,6,self_reported,2026-11-01
+Power Platform Developer,BI + AI/Fabric,Mumbai,1-3,4.2,6.2,5.2,13,self_reported,2026-10-31
+Power Platform Developer,BI + AI/Fabric,Mumbai,3-6,5.8,8.3,7.05,26,self_reported,2026-10-31
+AI Engineer,AI ceiling,Gurugram,1-3,11.7,14.8,13.25,122,self_reported,2026-10-30
+AI Engineer,AI ceiling,Gurugram,3-6,14.0,19.1,16.55,81,self_reported,2026-10-30
+AI Engineer,AI ceiling,Gurugram,6-9,27.1,29.9,28.5,0,estimate,2026-10-30
+AI Engineer,AI ceiling,New Delhi,1-3,8.0,9.9,8.95,97,self_reported,2026-10-29
+AI Engineer,AI ceiling,New Delhi,3-6,11.1,15.5,13.3,59,self_reported,2026-10-29
+AI Engineer,AI ceiling,Noida,1-3,7.5,9.5,8.5,108,self_reported,2026-10-30
+AI Engineer,AI ceiling,Noida,3-6,11.2,15.4,13.3,78,self_reported,2026-10-30
+AI Engineer,AI ceiling,Bengaluru,1-3,11.5,12.7,12.1,804,self_reported,2026-11-01
+AI Engineer,AI ceiling,Bengaluru,3-6,16.1,17.8,16.95,650,self_reported,2026-11-01
+AI Engineer,AI ceiling,Bengaluru,6-9,20.6,30.1,25.35,10,self_reported,2026-11-01
+AI Engineer,AI ceiling,Pune,1-3,9.1,10.3,9.7,270,self_reported,2026-10-30
+AI Engineer,AI ceiling,Pune,3-6,14.0,15.9,14.95,305,self_reported,2026-10-30
+AI Engineer,AI ceiling,Pune,6-9,19.9,27.6,23.75,8,self_reported,2026-10-30
+AI Engineer,AI ceiling,Mumbai,1-3,10.8,13.3,12.05,129,self_reported,2026-11-01
+AI Engineer,AI ceiling,Mumbai,3-6,14.3,17.7,16.0,93,self_reported,2026-11-01
+AI Engineer,AI ceiling,Mumbai,6-9,29.5,32.6,31.05,0,estimate,2026-11-01
+AI Engineer,AI ceiling,Hyderabad,1-3,11.4,12.7,12.05,416,self_reported,2026-10-30
+AI Engineer,AI ceiling,Hyderabad,3-6,13.5,15.2,14.35,336,self_reported,2026-10-30
+AI Engineer,AI ceiling,Hyderabad,6-9,21.4,23.7,22.55,0,estimate,2026-10-30
